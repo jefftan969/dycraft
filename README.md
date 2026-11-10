@@ -10,6 +10,8 @@ DyCraft is an agentic system for creating minute-long 3D animations in Blender f
 Designed on top of native coding agent harnesses (Codex or Claude Code), DyCraft provides a workflow and set of tools for long-horizon animation, including planning, prompt
 rewriting, 3D coding, animation storyboarding, motion authoring, physical verification, and review.
 
+Check out our [project page](https://dy-craft.github.io) for example results and an interactive animation viewer!
+
 ## Overview
 
 DyCraft includes four agent types, selected with `--layer`:
