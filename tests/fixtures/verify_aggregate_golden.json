@@ -1,0 +1,1415 @@
+{
+ "clean": [
+  {
+   "evidence": {
+    "failure_count": 0,
+    "frames_checked": {
+     "count": 10,
+     "end": 9,
+     "start": 0
+    }
+   },
+   "name": "AnimationWellFormed",
+   "suggested_repairs": [],
+   "verdict": "pass"
+  },
+  {
+   "evidence": {
+    "failure_count": 0
+   },
+   "name": "JointLimits",
+   "suggested_repairs": [],
+   "verdict": "pass"
+  },
+  {
+   "evidence": {
+    "diagnostic_only": true,
+    "failure_count": 0
+   },
+   "name": "AnatomicalJointLimits",
+   "suggested_repairs": [],
+   "verdict": "pass"
+  },
+  {
+   "evidence": {
+    "allowances": {
+     "declared": 2,
+     "inherited": 1
+    },
+    "containment": {
+     "checked_surfaces": [],
+     "unchecked": [
+      "wall_xmin",
+      "wall_xmax",
+      "wall_ymin",
+      "wall_ymax",
+      "floor",
+      "ceiling"
+     ]
+    },
+    "failure_count": 0,
+    "stats": {
+     "bvh_builds": 3,
+     "collision_pair_cache_hits": 7
+    }
+   },
+   "name": "NoPenetration",
+   "suggested_repairs": [],
+   "verdict": "pass"
+  },
+  {
+   "evidence": {
+    "events": {
+     "checked": 0,
+     "deferred": 1
+    },
+    "events_checked": 0,
+    "events_deferred": 1,
+    "failure_count": 0
+   },
+   "name": "EventsSatisfied",
+   "suggested_repairs": [],
+   "verdict": "pass"
+  },
+  {
+   "evidence": {
+    "diagnostic_only": true,
+    "occurrences_total": 0,
+    "transitions_checked": 10,
+    "warning_count": 0
+   },
+   "name": "MotionContinuity",
+   "suggested_repairs": [],
+   "verdict": "pass"
+  },
+  {
+   "evidence": {
+    "bodies": [],
+    "considered": [],
+    "diagnostic_only": true,
+    "failure_count": 0,
+    "measure": "signed distance from the mass-weighted centre of mass to the convex hull of the footprints bearing on the floor; negative is inside. Split by how many parts were bearing, because pooling a one-foot phase with a two-foot one reports the duty factor rather than the balance.",
+    "measured": [],
+    "note": "No `bodies` is not a pass: it means nothing was measurable. `unmeasured` says why for each candidate.",
+    "unmeasured": {}
+   },
+   "name": "SupportMargin",
+   "suggested_repairs": [],
+   "verdict": "pass"
+  },
+  {
+   "evidence": {
+    "diagnostic_only": true,
+    "failure_count": 0,
+    "measure": "horizontal creep of a bearing part's lowest-vertex centroid from where it last touched down, per bearing interval. Read `bearing_intervals` and `max_clearance_m` with it: one interval at no clearance is a part that never lifted.",
+    "parts": []
+   },
+   "name": "ContactSlip",
+   "suggested_repairs": [],
+   "verdict": "pass"
+  }
+ ],
+ "everything": [
+  {
+   "evidence": {
+    "failure_count": 1,
+    "failures": [
+     {
+      "frame": 4,
+      "object": "x",
+      "reason": "empty"
+     }
+    ],
+    "frames_checked": {
+     "count": 60,
+     "end": 59,
+     "start": 0
+    }
+   },
+   "name": "AnimationWellFormed",
+   "suggested_repairs": [],
+   "verdict": "fail"
+  },
+  {
+   "evidence": {
+    "failure_count": 5,
+    "findings": [
+     {
+      "frame_count": 5,
+      "reason": "joint limit or motion axis changed",
+      "repair": "A joint was driven outside its declared range. `arm__elbow` reached q in [2.1, 2.5] against limits [0.0, 2.0]. Clamp the drive, or change the joint's limits in the object source; do not edit the evaluated pose.",
+      "subjects": [
+       {
+        "frames": [
+         [
+          28,
+          32
+         ]
+        ],
+        "limits": [
+         0.0,
+         2.0
+        ],
+        "q_range": [
+         2.1,
+         2.5
+        ],
+        "subject": "arm__elbow"
+       }
+      ]
+     }
+    ]
+   },
+   "name": "JointLimits",
+   "suggested_repairs": [
+    "A joint was driven outside its declared range. `arm__elbow` reached q in [2.1, 2.5] against limits [0.0, 2.0]. Clamp the drive, or change the joint's limits in the object source; do not edit the evaluated pose."
+   ],
+   "verdict": "fail"
+  },
+  {
+   "evidence": {
+    "diagnostic_only": true,
+    "failure_count": 1,
+    "failures": [
+     {
+      "frame_count": 16,
+      "frames": [
+       [
+        25,
+        40
+       ]
+      ],
+      "joint": "elbow_R",
+      "limits_deg": [
+       -10.0,
+       160.0
+      ],
+      "measure": "flexion",
+      "reason": "bent backwards",
+      "rig": "rig/t/body",
+      "window": [
+       1.0417,
+       1.6667
+      ],
+      "worst_deg": -120.0,
+      "worst_frame": 35
+     }
+    ]
+   },
+   "name": "AnatomicalJointLimits",
+   "suggested_repairs": [],
+   "verdict": "uncertain"
+  },
+  {
+   "evidence": {
+    "allowances": {
+     "declared": 2,
+     "inherited": 1
+    },
+    "allowances_exceeded": [
+     {
+      "a": "cup/body",
+      "b": "robot/hand",
+      "deepest_frame": 40,
+      "deepest_m": 0.06,
+      "first_frame": 10,
+      "frames": 2,
+      "last_frame": 40,
+      "max_depth_m": 0.05
+     }
+    ],
+    "allowed_contacts": [
+     {
+      "a": "cup/body",
+      "b": "robot/hand",
+      "frames": 2,
+      "limit_m": 0.05,
+      "max_depth_frame": 40,
+      "max_depth_m": 0.06
+     },
+     {
+      "a": "cup/body",
+      "b": "tray/top",
+      "frames": 1,
+      "max_depth_frame": 41,
+      "max_depth_m": 0.002
+     }
+    ],
+    "containment": {
+     "checked_surfaces": [
+      "floor",
+      "wall_xmax",
+      "wall_xmin"
+     ],
+     "unchecked": [
+      "wall_ymin",
+      "wall_ymax",
+      "ceiling"
+     ]
+    },
+    "failure_count": 21,
+    "frames_failed": [
+     [
+      10,
+      10
+     ],
+     [
+      14,
+      15
+     ],
+     [
+      20,
+      32
+     ],
+     [
+      40,
+      40
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      58,
+      58
+     ]
+    ],
+    "invalid_allowances": [
+     {
+      "a": "x/p",
+      "b": "typo/q",
+      "index": 3,
+      "kind": "collision_allowance",
+      "reason": "collision allowance 'x/p' / 'typo/q': unknown 'typo/q'; operands are two distinct part identities ('instance/part')"
+     }
+    ],
+    "invalid_liquids": [
+     {
+      "index": 0,
+      "kind": "liquid",
+      "object": "water",
+      "reason": "liquid 'water' names no part"
+     }
+    ],
+    "measure": "separating_shift_m along separating_direction is how far b must move to come clear of a at representative_frame, bisected on the evaluated meshes; an upper bound on the minimum translation, and not a depth. max_depth_m is the depth: the deepest vertex of either mesh inside the other, measured to that mesh's surface; pairs_by_depth ranks on it. `penetration_unresolved` means no candidate direction came apart, so the overlap is real but unmeasured.",
+    "out_of_room": [
+     {
+      "frame_count": 3,
+      "frames": [
+       [
+        28,
+        29
+       ],
+       [
+        58,
+        58
+       ]
+      ],
+      "object": "cart",
+      "outside_by_m": 0.58,
+      "reason": "outside room"
+     }
+    ],
+    "pairs": [
+     {
+      "a": "robot/hand",
+      "b": "box/body",
+      "frame_count": 13,
+      "kind": "surface_crossing",
+      "max_depth_m": 0.001,
+      "spans": [
+       {
+        "frames": [
+         20,
+         32
+        ],
+        "max_depth_frame": 24,
+        "max_depth_m": 0.001,
+        "representative_frame": 24,
+        "separating_direction": [
+         0.0,
+         0.0,
+         1.0
+        ],
+        "separating_shift_m": 0.004
+       }
+      ],
+      "worst_separating_shift_m": 0.004
+     },
+     {
+      "a": "robot/foot",
+      "b": "room_prop/leg",
+      "frame_count": 3,
+      "kind": "surface_crossing",
+      "max_depth_m": 0.0015,
+      "spans": [
+       {
+        "frames": [
+         14,
+         15
+        ],
+        "max_depth_frame": 14,
+        "max_depth_m": 0.0015,
+        "representative_frame": 14,
+        "separating_direction": [
+         0.0,
+         0.0,
+         1.0
+        ],
+        "separating_shift_m": 0.001
+       },
+       {
+        "frames": [
+         44,
+         44
+        ],
+        "max_depth_frame": 44,
+        "max_depth_m": 0.0,
+        "representative_frame": 44,
+        "separating_direction": [
+         0.0,
+         0.0,
+         1.0
+        ],
+        "separating_shift_m": 0.003
+       }
+      ],
+      "worst_separating_shift_m": 0.003
+     }
+    ],
+    "pairs_by_depth": [
+     {
+      "a": "robot/foot",
+      "b": "room_prop/leg",
+      "max_depth_m": 0.0015
+     },
+     {
+      "a": "robot/hand",
+      "b": "box/body",
+      "max_depth_m": 0.001
+     }
+    ],
+    "stats": {
+     "bvh_builds": 3,
+     "collision_pair_cache_hits": 7
+    }
+   },
+   "name": "NoPenetration",
+   "suggested_repairs": [
+    "1 collision allowance declaration(s) could not be read; the first, at index 3, because collision allowance 'x/p' / 'typo/q': unknown 'typo/q'; operands are two distinct part identities ('instance/part'). It was skipped, so the overlaps it meant to excuse are reported. Fix the declaration rather than the geometry.",
+    "1 liquid declaration(s) could not be read; the first, at index 0, because liquid 'water' names no part. It was skipped, so that object is checked as a solid. Fix the declaration rather than the geometry.",
+    "cup/body / robot/hand went 60 mm deep at frame 40, past its allowance's max_depth_m of 50 mm: change the pose or the parts so they meet as the allowance says, or raise max_depth_m if that depth is what is meant",
+    "Separate each pair in `pairs` (deepest first in `pairs_by_depth`) by changing the pose, the path or the parts. Where the overlap is intended, such as an item held, worn or nested, declare a narrow collision allowance for those parts with a window and the depth as `max_depth_m`."
+   ],
+   "verdict": "fail"
+  },
+  {
+   "evidence": {
+    "events": [
+     {
+      "bearing_intervals": 1,
+      "checked": 60,
+      "max_clearance_m": 0.02,
+      "max_slip_frame": 59,
+      "max_slip_m": 0.0098,
+      "name": "stand",
+      "ok": false,
+      "satisfied_at": null,
+      "status": "unsatisfied",
+      "unsatisfied": [
+       [
+        36,
+        59
+       ]
+      ],
+      "unsatisfied_count": 24,
+      "window": [
+       0.0,
+       59.0
+      ],
+      "window_frames": [
+       0,
+       59
+      ]
+     },
+     {
+      "checked": 60,
+      "name": "balanced",
+      "ok": false,
+      "satisfied_at": null,
+      "status": "unsatisfied",
+      "unsatisfied": [
+       [
+        50,
+        59
+       ]
+      ],
+      "unsatisfied_count": 10,
+      "window": [
+       0.0,
+       59.0
+      ],
+      "window_frames": [
+       0,
+       59
+      ],
+      "worst_margin_frame": 50,
+      "worst_margin_m": 0.02
+     },
+     {
+      "checked": 6,
+      "name": "bent",
+      "ok": false,
+      "satisfied_at": null,
+      "status": "unsatisfied",
+      "unsatisfied": [
+       [
+        24,
+        25
+       ]
+      ],
+      "unsatisfied_count": 2,
+      "window": [
+       20.0,
+       25.0
+      ],
+      "window_frames": [
+       20,
+       25
+      ]
+     },
+     {
+      "checked": 21,
+      "name": "apart",
+      "ok": false,
+      "satisfied_at": null,
+      "status": "unsatisfied",
+      "unsatisfied": [
+       [
+        40,
+        40
+       ]
+      ],
+      "unsatisfied_count": 1,
+      "window": [
+       30.0,
+       50.0
+      ],
+      "window_frames": [
+       30,
+       50
+      ],
+      "worst_gap_frame": 40,
+      "worst_gap_m": 0.001
+     },
+     {
+      "index": 8,
+      "name": "sits",
+      "ok": false,
+      "reason": "a 'chiar' names no instance of this scene",
+      "status": "invalid"
+     },
+     {
+      "deferred": true,
+      "name": "later",
+      "status": "deferred",
+      "window": [
+       50.0,
+       90.0
+      ],
+      "window_frames": [
+       50,
+       90
+      ]
+     },
+     {
+      "checked": 60,
+      "name": "grip",
+      "ok": true,
+      "satisfied_at": 1.875,
+      "status": "satisfied",
+      "unsatisfied": [
+       [
+        0,
+        44
+       ]
+      ],
+      "unsatisfied_count": 45,
+      "window": [
+       0.0,
+       59.0
+      ],
+      "window_frames": [
+       0,
+       59
+      ],
+      "worst_gap_frame": 45,
+      "worst_gap_m": 0.0005
+     },
+     {
+      "checked": 21,
+      "missing_on": [
+       [
+        20,
+        34
+       ]
+      ],
+      "missing_refs": [
+       [
+        "box/body"
+       ]
+      ],
+      "name": "reach",
+      "ok": true,
+      "satisfied_at": 1.5833,
+      "status": "satisfied",
+      "unsatisfied": [
+       [
+        20,
+        37
+       ],
+       [
+        39,
+        40
+       ]
+      ],
+      "unsatisfied_count": 20,
+      "window": [
+       20.0,
+       40.0
+      ],
+      "window_frames": [
+       20,
+       40
+      ]
+     },
+     {
+      "checked": 11,
+      "name": "over",
+      "ok": true,
+      "satisfied_at": 0.2083,
+      "status": "satisfied",
+      "window": [
+       5.0,
+       15.0
+      ],
+      "window_frames": [
+       5,
+       15
+      ]
+     }
+    ],
+    "events_checked": 8,
+    "events_deferred": 1,
+    "failure_count": 5
+   },
+   "name": "EventsSatisfied",
+   "suggested_repairs": [
+    "1 event declaration(s) could not be read; the first, at index 8, because a 'chiar' names no instance of this scene. It is reported as an unmet `invalid` event until it parses. Fix the declaration rather than the geometry."
+   ],
+   "verdict": "fail"
+  },
+  {
+   "evidence": {
+    "diagnostic_only": true,
+    "occurrences_total": 4,
+    "spikes": [
+     {
+      "channel": "rotation",
+      "frames": [
+       [
+        11,
+        12
+       ],
+       [
+        28,
+        30
+       ],
+       [
+        49,
+        50
+       ]
+      ],
+      "object": "arm",
+      "occurrences": 4,
+      "reason": "isolated motion spike",
+      "representative_frame": 50,
+      "units": "rad/s",
+      "window": [
+       0.4583,
+       2.0833
+      ],
+      "worst_rate": 120.0
+     }
+    ],
+    "transitions_checked": 60,
+    "warning_count": 1
+   },
+   "name": "MotionContinuity",
+   "suggested_repairs": [
+    "Inspect the reported frames; repair unintended jumps/jitter or explain intentional transitions."
+   ],
+   "verdict": "uncertain"
+  },
+  {
+   "evidence": {
+    "bodies": [
+     {
+      "by_bearing_parts": {
+       "2": {
+        "frames": 30,
+        "median_margin_m": 0.03,
+        "outside": 30,
+        "outside_fraction": 1.0,
+        "worst_margin_m": 0.03
+       }
+      },
+      "frames_bearing": 30,
+      "instance": "dog",
+      "pooled": {
+       "frames": 30,
+       "median_margin_m": 0.03,
+       "outside": 30,
+       "outside_fraction": 1.0,
+       "worst_margin_m": 0.03
+      },
+      "worst_margin_frame": 30,
+      "worst_margin_seconds": 1.25
+     },
+     {
+      "by_bearing_parts": {
+       "1": {
+        "frames": 60,
+        "median_margin_m": 0.05,
+        "outside": 49,
+        "outside_fraction": 0.8167,
+        "worst_margin_m": 0.05
+       }
+      },
+      "frames_bearing": 60,
+      "instance": "robot",
+      "pooled": {
+       "frames": 60,
+       "median_margin_m": 0.05,
+       "outside": 49,
+       "outside_fraction": 0.8167,
+       "worst_margin_m": 0.05
+      },
+      "worst_margin_frame": 11,
+      "worst_margin_seconds": 0.4583
+     }
+    ],
+    "considered": [
+     "dog",
+     "robot"
+    ],
+    "diagnostic_only": true,
+    "failure_count": 2,
+    "measure": "signed distance from the mass-weighted centre of mass to the convex hull of the footprints bearing on the floor; negative is inside. Split by how many parts were bearing, because pooling a one-foot phase with a two-foot one reports the duty factor rather than the balance.",
+    "measured": [
+     "dog",
+     "robot"
+    ],
+    "note": null,
+    "unmeasured": {}
+   },
+   "name": "SupportMargin",
+   "suggested_repairs": [
+    "Read `by_bearing_parts` rather than `pooled`: the fewest-support phase is where balance is decided. A body outside its support through nearly all of that phase is not balanced, whatever the gait."
+   ],
+   "verdict": "uncertain"
+  },
+  {
+   "evidence": {
+    "diagnostic_only": true,
+    "failure_count": 2,
+    "measure": "horizontal creep of a bearing part's lowest-vertex centroid from where it last touched down, per bearing interval. Read `bearing_intervals` and `max_clearance_m` with it: one interval at no clearance is a part that never lifted.",
+    "parts": [
+     {
+      "bearing_intervals": 1,
+      "bearing_on": [
+       "room.floor"
+      ],
+      "frame_gaps": 0,
+      "frames_bearing": 30,
+      "max_clearance_m": 0.0,
+      "max_slip_frame": 59,
+      "max_slip_m": 0.058,
+      "max_slip_seconds": 2.4583,
+      "part": "dog/paw"
+     },
+     {
+      "bearing_intervals": 1,
+      "bearing_on": [
+       "room.floor"
+      ],
+      "frame_gaps": 0,
+      "frames_bearing": 60,
+      "max_clearance_m": 0.0,
+      "max_slip_frame": 59,
+      "max_slip_m": 0.059,
+      "max_slip_seconds": 2.4583,
+      "part": "robot/foot"
+     }
+    ]
+   },
+   "name": "ContactSlip",
+   "suggested_repairs": [
+    "A bearing part that creeps is a foot sliding or a support drifting. Check `bearing_intervals` first: one interval spanning the motion means the part never left the floor, which is a different repair from a step that lands badly."
+   ],
+   "verdict": "uncertain"
+  }
+ ],
+ "everything_partial_events": [
+  {
+   "evidence": {
+    "failure_count": 1,
+    "failures": [
+     {
+      "frame": 4,
+      "object": "x",
+      "reason": "empty"
+     }
+    ],
+    "frames_checked": {
+     "count": 60,
+     "end": 59,
+     "start": 0
+    }
+   },
+   "name": "AnimationWellFormed",
+   "suggested_repairs": [],
+   "verdict": "fail"
+  },
+  {
+   "evidence": {
+    "failure_count": 5,
+    "findings": [
+     {
+      "frame_count": 5,
+      "reason": "joint limit or motion axis changed",
+      "repair": "A joint was driven outside its declared range. `arm__elbow` reached q in [2.1, 2.5] against limits [0.0, 2.0]. Clamp the drive, or change the joint's limits in the object source; do not edit the evaluated pose.",
+      "subjects": [
+       {
+        "frames": [
+         [
+          28,
+          32
+         ]
+        ],
+        "limits": [
+         0.0,
+         2.0
+        ],
+        "q_range": [
+         2.1,
+         2.5
+        ],
+        "subject": "arm__elbow"
+       }
+      ]
+     }
+    ]
+   },
+   "name": "JointLimits",
+   "suggested_repairs": [
+    "A joint was driven outside its declared range. `arm__elbow` reached q in [2.1, 2.5] against limits [0.0, 2.0]. Clamp the drive, or change the joint's limits in the object source; do not edit the evaluated pose."
+   ],
+   "verdict": "fail"
+  },
+  {
+   "evidence": {
+    "diagnostic_only": true,
+    "failure_count": 1,
+    "failures": [
+     {
+      "frame_count": 16,
+      "frames": [
+       [
+        25,
+        40
+       ]
+      ],
+      "joint": "elbow_R",
+      "limits_deg": [
+       -10.0,
+       160.0
+      ],
+      "measure": "flexion",
+      "reason": "bent backwards",
+      "rig": "rig/t/body",
+      "window": [
+       1.0417,
+       1.6667
+      ],
+      "worst_deg": -120.0,
+      "worst_frame": 35
+     }
+    ]
+   },
+   "name": "AnatomicalJointLimits",
+   "suggested_repairs": [],
+   "verdict": "uncertain"
+  },
+  {
+   "evidence": {
+    "allowances": {
+     "declared": 2,
+     "inherited": 1
+    },
+    "allowances_exceeded": [
+     {
+      "a": "cup/body",
+      "b": "robot/hand",
+      "deepest_frame": 40,
+      "deepest_m": 0.06,
+      "first_frame": 10,
+      "frames": 2,
+      "last_frame": 40,
+      "max_depth_m": 0.05
+     }
+    ],
+    "allowed_contacts": [
+     {
+      "a": "cup/body",
+      "b": "robot/hand",
+      "frames": 2,
+      "limit_m": 0.05,
+      "max_depth_frame": 40,
+      "max_depth_m": 0.06
+     },
+     {
+      "a": "cup/body",
+      "b": "tray/top",
+      "frames": 1,
+      "max_depth_frame": 41,
+      "max_depth_m": 0.002
+     }
+    ],
+    "containment": {
+     "checked_surfaces": [
+      "floor",
+      "wall_xmax",
+      "wall_xmin"
+     ],
+     "unchecked": [
+      "wall_ymin",
+      "wall_ymax",
+      "ceiling"
+     ]
+    },
+    "failure_count": 21,
+    "frames_failed": [
+     [
+      10,
+      10
+     ],
+     [
+      14,
+      15
+     ],
+     [
+      20,
+      32
+     ],
+     [
+      40,
+      40
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      58,
+      58
+     ]
+    ],
+    "invalid_allowances": [
+     {
+      "a": "x/p",
+      "b": "typo/q",
+      "index": 3,
+      "kind": "collision_allowance",
+      "reason": "collision allowance 'x/p' / 'typo/q': unknown 'typo/q'; operands are two distinct part identities ('instance/part')"
+     }
+    ],
+    "invalid_liquids": [
+     {
+      "index": 0,
+      "kind": "liquid",
+      "object": "water",
+      "reason": "liquid 'water' names no part"
+     }
+    ],
+    "measure": "separating_shift_m along separating_direction is how far b must move to come clear of a at representative_frame, bisected on the evaluated meshes; an upper bound on the minimum translation, and not a depth. max_depth_m is the depth: the deepest vertex of either mesh inside the other, measured to that mesh's surface; pairs_by_depth ranks on it. `penetration_unresolved` means no candidate direction came apart, so the overlap is real but unmeasured.",
+    "out_of_room": [
+     {
+      "frame_count": 3,
+      "frames": [
+       [
+        28,
+        29
+       ],
+       [
+        58,
+        58
+       ]
+      ],
+      "object": "cart",
+      "outside_by_m": 0.58,
+      "reason": "outside room"
+     }
+    ],
+    "pairs": [
+     {
+      "a": "robot/hand",
+      "b": "box/body",
+      "frame_count": 13,
+      "kind": "surface_crossing",
+      "max_depth_m": 0.001,
+      "spans": [
+       {
+        "frames": [
+         20,
+         32
+        ],
+        "max_depth_frame": 24,
+        "max_depth_m": 0.001,
+        "representative_frame": 24,
+        "separating_direction": [
+         0.0,
+         0.0,
+         1.0
+        ],
+        "separating_shift_m": 0.004
+       }
+      ],
+      "worst_separating_shift_m": 0.004
+     },
+     {
+      "a": "robot/foot",
+      "b": "room_prop/leg",
+      "frame_count": 3,
+      "kind": "surface_crossing",
+      "max_depth_m": 0.0015,
+      "spans": [
+       {
+        "frames": [
+         14,
+         15
+        ],
+        "max_depth_frame": 14,
+        "max_depth_m": 0.0015,
+        "representative_frame": 14,
+        "separating_direction": [
+         0.0,
+         0.0,
+         1.0
+        ],
+        "separating_shift_m": 0.001
+       },
+       {
+        "frames": [
+         44,
+         44
+        ],
+        "max_depth_frame": 44,
+        "max_depth_m": 0.0,
+        "representative_frame": 44,
+        "separating_direction": [
+         0.0,
+         0.0,
+         1.0
+        ],
+        "separating_shift_m": 0.003
+       }
+      ],
+      "worst_separating_shift_m": 0.003
+     }
+    ],
+    "pairs_by_depth": [
+     {
+      "a": "robot/foot",
+      "b": "room_prop/leg",
+      "max_depth_m": 0.0015
+     },
+     {
+      "a": "robot/hand",
+      "b": "box/body",
+      "max_depth_m": 0.001
+     }
+    ],
+    "stats": {
+     "bvh_builds": 3,
+     "collision_pair_cache_hits": 7
+    }
+   },
+   "name": "NoPenetration",
+   "suggested_repairs": [
+    "1 collision allowance declaration(s) could not be read; the first, at index 3, because collision allowance 'x/p' / 'typo/q': unknown 'typo/q'; operands are two distinct part identities ('instance/part'). It was skipped, so the overlaps it meant to excuse are reported. Fix the declaration rather than the geometry.",
+    "1 liquid declaration(s) could not be read; the first, at index 0, because liquid 'water' names no part. It was skipped, so that object is checked as a solid. Fix the declaration rather than the geometry.",
+    "cup/body / robot/hand went 60 mm deep at frame 40, past its allowance's max_depth_m of 50 mm: change the pose or the parts so they meet as the allowance says, or raise max_depth_m if that depth is what is meant",
+    "Separate each pair in `pairs` (deepest first in `pairs_by_depth`) by changing the pose, the path or the parts. Where the overlap is intended, such as an item held, worn or nested, declare a narrow collision allowance for those parts with a window and the depth as `max_depth_m`."
+   ],
+   "verdict": "fail"
+  },
+  {
+   "evidence": {
+    "events": [
+     {
+      "bearing_intervals": 1,
+      "checked": 60,
+      "max_clearance_m": 0.02,
+      "max_slip_frame": 59,
+      "max_slip_m": 0.0098,
+      "name": "stand",
+      "ok": false,
+      "satisfied_at": null,
+      "status": "unsatisfied",
+      "unsatisfied": [
+       [
+        36,
+        59
+       ]
+      ],
+      "unsatisfied_count": 24,
+      "window": [
+       0.0,
+       59.0
+      ],
+      "window_frames": [
+       0,
+       59
+      ]
+     },
+     {
+      "checked": 60,
+      "name": "balanced",
+      "ok": false,
+      "satisfied_at": null,
+      "status": "unsatisfied",
+      "unsatisfied": [
+       [
+        50,
+        59
+       ]
+      ],
+      "unsatisfied_count": 10,
+      "window": [
+       0.0,
+       59.0
+      ],
+      "window_frames": [
+       0,
+       59
+      ],
+      "worst_margin_frame": 50,
+      "worst_margin_m": 0.02
+     },
+     {
+      "checked": 6,
+      "name": "bent",
+      "ok": false,
+      "satisfied_at": null,
+      "status": "unsatisfied",
+      "unsatisfied": [
+       [
+        24,
+        25
+       ]
+      ],
+      "unsatisfied_count": 2,
+      "window": [
+       20.0,
+       25.0
+      ],
+      "window_frames": [
+       20,
+       25
+      ]
+     },
+     {
+      "checked": 21,
+      "name": "apart",
+      "ok": false,
+      "satisfied_at": null,
+      "status": "unsatisfied",
+      "unsatisfied": [
+       [
+        40,
+        40
+       ]
+      ],
+      "unsatisfied_count": 1,
+      "window": [
+       30.0,
+       50.0
+      ],
+      "window_frames": [
+       30,
+       50
+      ],
+      "worst_gap_frame": 40,
+      "worst_gap_m": 0.001
+     },
+     {
+      "index": 8,
+      "name": "sits",
+      "ok": false,
+      "reason": "a 'chiar' names no instance of this scene",
+      "status": "invalid"
+     },
+     {
+      "checked": 60,
+      "name": "grip",
+      "ok": true,
+      "satisfied_at": 1.875,
+      "status": "satisfied",
+      "unsatisfied": [
+       [
+        0,
+        44
+       ]
+      ],
+      "unsatisfied_count": 45,
+      "window": [
+       0.0,
+       59.0
+      ],
+      "window_frames": [
+       0,
+       59
+      ],
+      "worst_gap_frame": 45,
+      "worst_gap_m": 0.0005
+     },
+     {
+      "checked": 21,
+      "missing_on": [
+       [
+        20,
+        34
+       ]
+      ],
+      "missing_refs": [
+       [
+        "box/body"
+       ]
+      ],
+      "name": "reach",
+      "ok": true,
+      "satisfied_at": 1.5833,
+      "status": "satisfied",
+      "unsatisfied": [
+       [
+        20,
+        37
+       ],
+       [
+        39,
+        40
+       ]
+      ],
+      "unsatisfied_count": 20,
+      "window": [
+       20.0,
+       40.0
+      ],
+      "window_frames": [
+       20,
+       40
+      ]
+     },
+     {
+      "checked": 11,
+      "name": "over",
+      "ok": true,
+      "satisfied_at": 0.2083,
+      "status": "satisfied",
+      "window": [
+       5.0,
+       15.0
+      ],
+      "window_frames": [
+       5,
+       15
+      ]
+     },
+     {
+      "checked": 10,
+      "name": "later",
+      "ok": true,
+      "partial": true,
+      "satisfied_at": 2.0833,
+      "status": "satisfied",
+      "window": [
+       50.0,
+       90.0
+      ],
+      "window_frames": [
+       50,
+       90
+      ]
+     }
+    ],
+    "failure_count": 5
+   },
+   "name": "EventsSatisfied",
+   "suggested_repairs": [
+    "1 event declaration(s) could not be read; the first, at index 8, because a 'chiar' names no instance of this scene. It is reported as an unmet `invalid` event until it parses. Fix the declaration rather than the geometry."
+   ],
+   "verdict": "fail"
+  },
+  {
+   "evidence": {
+    "diagnostic_only": true,
+    "occurrences_total": 4,
+    "spikes": [
+     {
+      "channel": "rotation",
+      "frames": [
+       [
+        11,
+        12
+       ],
+       [
+        28,
+        30
+       ],
+       [
+        49,
+        50
+       ]
+      ],
+      "object": "arm",
+      "occurrences": 4,
+      "reason": "isolated motion spike",
+      "representative_frame": 50,
+      "units": "rad/s",
+      "window": [
+       0.4583,
+       2.0833
+      ],
+      "worst_rate": 120.0
+     }
+    ],
+    "transitions_checked": 60,
+    "warning_count": 1
+   },
+   "name": "MotionContinuity",
+   "suggested_repairs": [
+    "Inspect the reported frames; repair unintended jumps/jitter or explain intentional transitions."
+   ],
+   "verdict": "uncertain"
+  },
+  {
+   "evidence": {
+    "bodies": [
+     {
+      "by_bearing_parts": {
+       "2": {
+        "frames": 30,
+        "median_margin_m": 0.03,
+        "outside": 30,
+        "outside_fraction": 1.0,
+        "worst_margin_m": 0.03
+       }
+      },
+      "frames_bearing": 30,
+      "instance": "dog",
+      "pooled": {
+       "frames": 30,
+       "median_margin_m": 0.03,
+       "outside": 30,
+       "outside_fraction": 1.0,
+       "worst_margin_m": 0.03
+      },
+      "worst_margin_frame": 30,
+      "worst_margin_seconds": 1.25
+     },
+     {
+      "by_bearing_parts": {
+       "1": {
+        "frames": 60,
+        "median_margin_m": 0.05,
+        "outside": 49,
+        "outside_fraction": 0.8167,
+        "worst_margin_m": 0.05
+       }
+      },
+      "frames_bearing": 60,
+      "instance": "robot",
+      "pooled": {
+       "frames": 60,
+       "median_margin_m": 0.05,
+       "outside": 49,
+       "outside_fraction": 0.8167,
+       "worst_margin_m": 0.05
+      },
+      "worst_margin_frame": 11,
+      "worst_margin_seconds": 0.4583
+     }
+    ],
+    "considered": [
+     "dog",
+     "robot"
+    ],
+    "diagnostic_only": true,
+    "failure_count": 2,
+    "measure": "signed distance from the mass-weighted centre of mass to the convex hull of the footprints bearing on the floor; negative is inside. Split by how many parts were bearing, because pooling a one-foot phase with a two-foot one reports the duty factor rather than the balance.",
+    "measured": [
+     "dog",
+     "robot"
+    ],
+    "note": null,
+    "unmeasured": {}
+   },
+   "name": "SupportMargin",
+   "suggested_repairs": [
+    "Read `by_bearing_parts` rather than `pooled`: the fewest-support phase is where balance is decided. A body outside its support through nearly all of that phase is not balanced, whatever the gait."
+   ],
+   "verdict": "uncertain"
+  },
+  {
+   "evidence": {
+    "diagnostic_only": true,
+    "failure_count": 2,
+    "measure": "horizontal creep of a bearing part's lowest-vertex centroid from where it last touched down, per bearing interval. Read `bearing_intervals` and `max_clearance_m` with it: one interval at no clearance is a part that never lifted.",
+    "parts": [
+     {
+      "bearing_intervals": 1,
+      "bearing_on": [
+       "room.floor"
+      ],
+      "frame_gaps": 0,
+      "frames_bearing": 30,
+      "max_clearance_m": 0.0,
+      "max_slip_frame": 59,
+      "max_slip_m": 0.058,
+      "max_slip_seconds": 2.4583,
+      "part": "dog/paw"
+     },
+     {
+      "bearing_intervals": 1,
+      "bearing_on": [
+       "room.floor"
+      ],
+      "frame_gaps": 0,
+      "frames_bearing": 60,
+      "max_clearance_m": 0.0,
+      "max_slip_frame": 59,
+      "max_slip_m": 0.059,
+      "max_slip_seconds": 2.4583,
+      "part": "robot/foot"
+     }
+    ]
+   },
+   "name": "ContactSlip",
+   "suggested_repairs": [
+    "A bearing part that creeps is a foot sliding or a support drifting. Check `bearing_intervals` first: one interval spanning the motion means the part never left the floor, which is a different repair from a step that lands badly."
+   ],
+   "verdict": "uncertain"
+  }
+ ]
+}

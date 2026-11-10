@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,450;0,9..40,500;0,9..40,600;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", "Consolas", monospace;
+  --color-background: #ffffff;
+  --color-foreground: #111111;
+}
+
+:root {
+  /* Surface hierarchy */
+  --surface-0: #ffffff;
+  --surface-1: #fafafa;
+  --surface-2: #f5f5f5;
+  --surface-3: #efefef;
+
+  /* Text hierarchy */
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-tertiary: #8b8b8b;
+  --text-quaternary: #b0b0b0;
+
+  /* Borders */
+  --border-default: #e6e6e6;
+  --border-subtle: #f0f0f0;
+  --border-strong: #d0d0d0;
+
+  /* Accent */
+  --accent: #0c8ce9;
+  --accent-soft: rgba(12, 140, 233, 0.08);
+  --accent-hover: rgba(12, 140, 233, 0.12);
+
+  /* Status */
+  --success: #1a8a4a;
+  --warning: #c27803;
+  --destructive: #d13415;
+
+  /* Agent identity. Used only on chrome (the run timeline's header chip),
+     never on a trajectory mark. The three hues are validated all-pairs on
+     white (worst CVD dE 9.2, normal-vision 24.0). `--agent-plain` is a
+     neutral grey for the one-off `plain` runs (the prompt rewriters and the
+     review sub-agent) and for any layer the viewer does not know. */
+  --agent-object: #2a78d6;
+  --agent-animation: #eb6834;
+  --agent-scene: #1baf7a;
+  --agent-plain: #52514e;
+
+  /* Trajectory categories. Nine nameable hues, optimised against the
+     ALL-PAIRS colour-blindness lists rather than the adjacent-pair ones,
+     because everything shares one row and any two segments can end up side by
+     side. Measured with the same maths the dataviz validator uses
+     (Machado-Oliveira-Fernandes 2009 severity 1.0, OKLab dE x100):
+
+         worst all-pairs normal-vision dE  17.4   (hard floor 15)
+         worst all-pairs min(protan,deutan) 10.4  (floor 6, target 8)
+
+     Both clear, so — unlike the faceted revision this replaced — the ORDER of
+     these is NOT load-bearing and no pair depends on never being adjacent.
+     Constraints held while optimising: OKLCH L in [0.43,0.77], C in
+     [0.12,0.20] (above 0.20 they read as neon, not as named colours), and
+     >=20 deg pairwise hue separation so no two share a colour name.
+     No white, no grey: every category is a real hue.
+
+     Model took the calmest hue of the nine and Aside the loudest, which is the
+     one assignment that is not arbitrary: Model is 54-65% of a run's
+     wall-clock, so a loud Model paints the whole band one colour, and coral
+     sits dE 12.4 from `--destructive` — a mostly-coral band read as "mostly
+     errors". Permuting the assignment does not change the all-pairs results.
+     Re-run scripts/validate_palette.js if any hex changes. */
+  --cat-model: #078cbb;      /* cyan      */
+  --cat-judge: #b28ffe;      /* lavender  */
+  --cat-author: #0948b3;     /* navy      */
+  --cat-build: #f09f14;      /* amber     */
+  --cat-inspect: #3fcbb9;    /* turquoise */
+  --cat-look: #8e7c04;       /* olive     */
+  --cat-solve: #920864;      /* plum      */
+  --cat-deliver: #176407;    /* green     */
+  --cat-aside: #f05e72;      /* coral     */
+
+  /* Label ink per fill, whichever of white / near-black wins on contrast.
+     Worst of the nine is 4.53:1, so every inline segment label clears AA. */
+  --cat-model-ink: #111111;
+  --cat-judge-ink: #111111;
+  --cat-author-ink: #ffffff;
+  --cat-build-ink: #111111;
+  --cat-inspect-ink: #111111;
+  --cat-look-ink: #111111;
+  --cat-solve-ink: #ffffff;
+  --cat-deliver-ink: #ffffff;
+  --cat-aside-ink: #111111;
+}
+
+/* Failure keeps the category's own hue and changes its texture instead, so a
+   status colour can never impersonate a category. The outline is near-black
+   rather than `--destructive`: coral sits dE 12.4 from that red, below the 15
+   floor, so a red outline on a coral segment was ambiguous. The hatch plus the
+   dashed outline plus the "x" the label is prefixed with carry it. The hatch
+   is deliberately faint: at 0.62 it won a legibility fight with the segment's
+   own label, which is the thing that actually says what failed. */
+.seg-failed {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.26) 0 2px,
+    transparent 2px 5px
+  );
+  outline: 1px dashed var(--text-primary);
+  outline-offset: 0;
+}
+
+/* The stretch of a turn where the model was composing a tool call's input
+   rather than thinking. Same hue and same segment — the bundle is unchanged —
+   but the 135 deg mirror of the failure hatch, which is the second and last
+   angle the texture channel allows. It cannot be confused with failure: that
+   is 45 deg, and a model segment never carries a failure status anyway.
+
+   Worth its own channel because it is 31% of an object run's model time
+   (29.7 h across the corpus) and, on a `Write object.py` turn, it IS the
+   authoring — bundled invisibly into "thinking" it was the largest thing this
+   timeline could not tell you. */
+.seg-writing {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.34) 0 2px,
+    transparent 2px 5px
+  );
+}
+
+/* No recorded end and the run has since finished: duration unknown. */
+.seg-unknown {
+  outline: 1px solid var(--warning);
+  outline-offset: 0;
+}
+
+* {
+  box-sizing: border-box;
+  border-color: var(--border-default);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  background: var(--surface-2);
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+/* Thin scrollbar for all panels */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* Code panel scroll */
+.code-panel-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+.code-panel-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.code-panel-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.code-panel-scroll::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+.code-panel-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* Property row pattern - Figma-like key/value rows */
+.prop-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 5px 0;
+  gap: 12px;
+}
+
+.prop-label {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.prop-value {
+  font-size: 11px;
+  color: var(--text-primary);
+  text-align: right;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Stacked variant: label on top, value full-width below.
+   Use for long mono IDs (Record ID, Run ID, Origin, …). */
+.prop-row-stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 5px 0;
+  gap: 2px;
+}
+
+.prop-row-stacked .prop-label {
+  text-align: left;
+}
+
+.prop-row-stacked .prop-value {
+  text-align: left;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Staging pulse animation */
+@keyframes pulse-staging {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.staging-pulse {
+  animation: pulse-staging 2s ease-in-out infinite;
+}

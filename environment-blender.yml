@@ -1,0 +1,32 @@
+# The Blender env for dycraft's animation layers and the `blender` render backend: the `bpy` 4.5 module that
+# render/_blender_child.py and the animation worker run in. It is separate from the main env because bpy 4.5 needs
+# Python 3.11 and NumPy < 2, while the main env's build123d and coal need NumPy 2.
+#
+#   python -m dycraft.install blender      # this env, plus the official Blender 4.5.13 binary that fluid needs
+#
+# or by hand:
+#   conda env create -f environment-blender.yml -p ~/conda_envs/dycraft-blender
+#   printf '%s\n' ~/conda_envs/dycraft-blender/bin/python > .blender_python
+#
+# `DYCRAFT_BLENDER_PYTHON=<path>/bin/python` overrides the pointer for one run. With neither, the `blender` backend
+# raises `RenderUnavailable`, which every caller degrades on (render/_blender_env.py::_resolve_blender_python).
+#
+# Why these versions:
+# - Blender 4.5 LTS, any patch (4.5.13 and 4.5.15 validated). Blender 5 changed APIs dycraft uses: 5.0 moved pose
+#   selection from `Bone.select` to `PoseBone.select`, so importing a rigged glTF fails with
+#   "AttributeError: 'Bone' object has no attribute 'select'" (agent/assets/_import_gltf_blender.py).
+# - Python 3.11 because bpy 4.5 publishes cp311 wheels only; on another Python pip finds "no matching distribution".
+# - NumPy is left to bpy, which declares numpy>=1.26,<2.
+#
+# The wheel is about 350 MB. Cycles renders on the GPU through OptiX or CUDA when an NVIDIA driver is present, and on
+# the CPU otherwise (much slower). Collision runs in the main env's interpreter, not here: don't install coal
+# into this env, since its wheels need NumPy 2.
+name: dycraft-blender
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11     # bpy 4.5 publishes cp311 wheels only
+  - pip
+  - pip:
+      - bpy==4.5.*   # the 4.5 LTS line, like the official binary; any patch
+

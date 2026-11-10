@@ -1,0 +1,40 @@
+# The cuRobo env for the `h.ik` op: kept out of the main env because cuRobo brings its own PyTorch and CUDA stack.
+#
+#   python -m dycraft.install ik           # this env, PyTorch for this GPU, cuRobo, and a check that IK solves on it
+#
+# PyTorch is NOT listed here, because the right build depends on the GPU. No single PyTorch build has kernels from
+# Pascal to Blackwell:
+#   - https://download.pytorch.org/whl/cu126 carries sm_50-sm_90 (Maxwell, Pascal, Volta, Turing, Ampere, Ada, Hopper);
+#   - https://download.pytorch.org/whl/cu128 carries sm_75-sm_120 (Turing to Blackwell);
+#   - PyPI's default build (CUDA 13) starts at sm_75.
+# A build without kernels for your GPU imports and reports CUDA available, then fails its first kernel with "no kernel
+# image is available for execution on the device". `install ik` reads the GPU's compute capability, takes the newest
+# torch from the matching index (`--torch-index` overrides), and refuses to record the env until a cuRobo IK solve
+# succeeds on the GPU.
+#
+# The rest of the CUDA stack stays on CUDA 12 too. warp-lang, which cuRobo imports, builds its PyPI wheels with CUDA 13
+# from 1.18 on, which needs sm_75 and an R580 driver: on a GTX 1070 cuRobo fails with "CUDA 13.4 requires sm_75 or
+# higher, but sm_61 (device cuda:0) was specified". Hence `warp-lang<1.18`, the last CUDA 12 line on PyPI (later
+# releases ship `+cu12` wheels on GitHub only), and `cuda-core[cu12]`.
+#
+# By hand (the PyTorch index alone lacks some of torch's dependencies, and with PyPI added pip prefers PyPI's
+# CUDA 13 build, hence two steps):
+#   conda env create -p ~/conda_envs/dycraft-ik -f environment-ik.yml
+#   ~/conda_envs/dycraft-ik/bin/pip install --no-deps --index-url https://download.pytorch.org/whl/cu126 torch
+#   ~/conda_envs/dycraft-ik/bin/pip install "torch==<the version just installed, e.g. 2.14.1+cu126>" \
+#       --extra-index-url https://download.pytorch.org/whl/cu126
+#   ~/conda_envs/dycraft-ik/bin/pip install 'cuda-core[cu12]' 'warp-lang<1.18'
+#   git clone https://github.com/NVlabs/curobo.git <curobo> && git -C <curobo> checkout 8e734f3
+#   ~/conda_envs/dycraft-ik/bin/pip install -e <curobo> --no-build-isolation
+#   ~/conda_envs/dycraft-ik/bin/pip install pyliblzfse
+#   printf '%s\n' ~/conda_envs/dycraft-ik/bin/python > .ik_python
+#
+# cuRobo is installed from a commit because no published release has the API this adapter targets: the v0.8.0 tag
+# lacks `curobo.types.ToolPoseCriteria`, which animation/ik/CUROBO.md teaches (install.py, CUROBO_COMMIT). `pyliblzfse` is what `curobo.robot_builder` imports under the name `liblzfse`.
+# `animation/ik/ik.py::_resolve_ik_python` is the authority on how the interpreter is found.
+name: dycraft-ik
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10,<3.14   # cuRobo needs 3.10+; `install ik` is validated end to end on 3.13
+  - pip

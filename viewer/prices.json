@@ -1,0 +1,19 @@
+{
+  "_note": "USD per 1,000,000 tokens. Keys match the model id case-insensitively; longest prefix wins, so a family entry covers its variants. Modifiers (inference_geo=us 1.1x, service_tier=batch 0.5x, speed=fast 2x) are read from the recorded per-turn usage and applied by viewer/cost.py — do not bake them into these rates. Override the whole file with $DYCRAFT_PRICES_JSON. An unlisted model renders as '--' rather than being guessed.",
+  "_source": "Claude Opus 5 published API pricing as of 2026-07-28 (released 2026-07-24).",
+  "_fable_note": "claude-fable-5 is Opus 5's fast tier and bills at 2x the standard rates. It carries its own rate card rather than relying on the speed=fast multiplier, because the recorded per-turn `speed` field reads \"standard\" on these runs — the 2x is a property of the model id, not a signalled billing mode. Do not set both.",
+  "claude-opus-5": {
+    "input": 5.0,
+    "cache_read": 0.5,
+    "cache_write_5m": 6.25,
+    "cache_write_1h": 10.0,
+    "output": 25.0
+  },
+  "claude-fable-5": {
+    "input": 10.0,
+    "cache_read": 1.0,
+    "cache_write_5m": 12.5,
+    "cache_write_1h": 20.0,
+    "output": 50.0
+  }
+}

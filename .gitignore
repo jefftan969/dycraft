@@ -1,0 +1,61 @@
+# Run outputs and scratch.
+runs
+tmp
+
+# Per-checkout configuration: the interpreter pointer files the setup writes, and `api_keys.sh` should one exist.
+api_keys.sh
+.b123d_python
+.blender_python
+.blender_binary
+.ik_python
+.bare_python
+
+# Downloaded assets: robot descriptions, the character library and other third-party data, each under its own
+# licence and fetched per checkout rather than vendored. No trailing slash: a run's worktree may link `assets` to
+# another checkout's, and `assets/` matches only a directory.
+assets
+# The importer package of that name is source, not downloaded data.
+!/agent/assets/
+
+# The paper's films as `python -m dycraft.install films` puts them in a clone: the dataset mirror, the links to
+# each film, and what the viewer prepares to play one (`viewer/films.py`). Anchored, since `films` is also a
+# folder name in the tree.
+/.datasets
+/films
+/.viewer_films
+
+# Python, editors and the viewer's front-end build.
+__pycache__/
+*.py[cod]
+*.egg-info
+*.swp
+*.swo
+.vscode
+viewer/web/node_modules/
+viewer/web/dist/
+viewer/web/*.tsbuildinfo
+
+# Files an agent CLI session may leave in the checkout.
+CLAUDE.md
+AGENTS.md
+context_summary.md
+
+# Development trees and scratch files that are not part of the package.
+runs_old
+visuals
+run[0-9].sh
+runc[0-9].sh
+test_bed
+remote
+tmp_git_merge*
+tmp_object_planning/
+tmp_fable/
+tmp_gpt/
+tmp_opus/
+tmp_animation
+tmp_final_films/
+dycraft_final_films_*.zip
+standalone_pilots/
+eval/bare_agent
+eval/env.local.sh
+export/web/node_modules/

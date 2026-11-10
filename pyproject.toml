@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dycraft"
+version = "0.0.1"
+description = "An agentic system for creating minute-long 3D animations in Blender from text prompts."
+requires-python = ">=3.10,<3.15"
+license = {text = "Apache-2.0"}
+dynamic = ["dependencies"]
+
+[project.optional-dependencies]
+# The test suite: `pip install -e ".[test]"`, then `python -m pytest tests/ -q -p no:randomly`. httpx is what
+# FastAPI's TestClient needs for the viewer's tests.
+test = ["pytest>=8", "httpx"]
+
+[tool.setuptools.dynamic]
+# One list of pins: requirements-main.txt, generated with environment-main.yml by `environment_test.py --write-env`.
+dependencies = { file = ["requirements-main.txt"] }
+
+# The repository root is the `dycraft` package, so every subpackage is listed under that name. `pip install -e .`
+# maps the whole directory; a regular `pip install .` installs exactly these, plus the data files below.
+[tool.setuptools]
+packages = [
+    "dycraft",
+    "dycraft.agent",
+    "dycraft.agent.assets",
+    "dycraft.agent.cad",
+    "dycraft.agent.layers",
+    "dycraft.agent.plain",
+    "dycraft.animation",
+    "dycraft.animation.blender",
+    "dycraft.animation.ik",
+    "dycraft.animation.mocap",
+    "dycraft.animation.sim",
+    "dycraft.benchmark",
+    "dycraft.benchmark.score",
+    "dycraft.cli",
+    "dycraft.cli.backends",
+    "dycraft.export",
+    "dycraft.render",
+    "dycraft.sdk",
+    "dycraft.verify",
+    "dycraft.viewer",
+]
+
+[tool.setuptools.package-dir]
+dycraft = "."
+
+[tool.setuptools.package-data]
+# The conda specs `python -m dycraft.install blender|ik` builds from ship with the package.
+"dycraft" = [".claude/skills/**/*", ".agents/skills/**/*", "catalogs/**/*", "environment-*.yml"]
+"dycraft.agent" = ["prompts/**/*"]
+"dycraft.animation" = ["*.md"]
+"dycraft.animation.mocap" = ["libraries/**/*"]
+"dycraft.animation.ik" = ["*.md", "curobo_docs/**/*", "examples/*"]
+"dycraft.animation.sim" = ["*.md"]
+"dycraft.benchmark" = ["*.md"]
+"dycraft.benchmark.score" = ["*.json", "*.md"]
+"dycraft.cli" = ["*.md"]
+# The Blender scripts run as files inside Blender, and `--web` runs the Node scripts with their pinned lockfile.
+"dycraft.export" = ["_blender/*.py", "web/*.mjs", "web/package.json", "web/package-lock.json"]
+"dycraft.render" = ["*.json"]
+# The viewer's front end only when it has been built (`npm --prefix viewer/web ci && npm --prefix viewer/web run
+# build`); without it the viewer says how to build it.
+"dycraft.viewer" = ["*.json", "*.md", "web/dist/**/*"]

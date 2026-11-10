@@ -1,0 +1,387 @@
+{
+ "schema": "dycraft.asset_library_catalog.v1",
+ "about": "What each bundle in assets/imported/ is, for INDEX.md (agent/assets/asset_library.py). `hidden` removes a bundle from the index and makes load_asset refuse it, with the reason.",
+ "assets": {
+  "bearded_man_rig": {
+   "category": "person",
+   "description": "bearded man with long hair in a dark leather jacket and dark trousers",
+   "tags": [
+    "man",
+    "rugged",
+    "biker",
+    "fingers"
+   ]
+  },
+  "chimp_young_rig": {
+   "category": "animal",
+   "description": "young chimpanzee, low detail, standing (0.55 m)",
+   "tags": [
+    "ape",
+    "chimpanzee",
+    "monkey",
+    "primate",
+    "juvenile"
+   ]
+  },
+  "crow_rig": {
+   "category": "animal",
+   "description": "crow (black bird) with wings spread in its rest pose",
+   "tags": [
+    "bird",
+    "crow",
+    "raven",
+    "corvid"
+   ]
+  },
+  "delivery_man_rig": {
+   "category": "person",
+   "description": "man in a brown work shirt, work trousers and a cap",
+   "tags": [
+    "man",
+    "courier",
+    "worker",
+    "labourer",
+    "fingers"
+   ]
+  },
+  "dog_shepherd_rig": {
+   "category": "animal",
+   "description": "German shepherd, medium size (0.6 m tall), detailed face rig",
+   "tags": [
+    "dog",
+    "German shepherd",
+    "Alsatian",
+    "quadruped"
+   ]
+  },
+  "dog_shiba_rig": {
+   "category": "animal",
+   "description": "Shiba Inu, small tan-and-white dog (0.42 m tall)",
+   "tags": [
+    "dog",
+    "shiba",
+    "small dog",
+    "puppy",
+    "quadruped"
+   ]
+  },
+  "franka_panda": {
+   "category": "robot",
+   "description": "Franka Emika Panda 7-joint arm with a parallel gripper, fixed base",
+   "tags": [
+    "robot arm",
+    "manipulator",
+    "gripper",
+    "industrial"
+   ]
+  },
+  "g1_with_dex1_v2": {
+   "hidden": "superseded by g1_with_dex1_v3"
+  },
+  "g1_with_dex1_v3": {
+   "category": "robot",
+   "description": "Unitree G1 humanoid robot (1.3 m) with Dex1 two-finger grippers; the standard G1",
+   "tags": [
+    "humanoid",
+    "Unitree",
+    "G1",
+    "gripper",
+    "biped robot"
+   ]
+  },
+  "man_coat_rig": {
+   "category": "person",
+   "description": "dark-haired, bearded man in a long grey-brown overcoat, dark trousers and boots",
+   "tags": [
+    "man",
+    "coat",
+    "winter",
+    "detective"
+   ]
+  },
+  "michelle_rig": {
+   "category": "person",
+   "description": "stylised cartoon young woman (Mixamo \"Michelle\"): hair buns, cropped top, yellow trousers",
+   "tags": [
+    "woman",
+    "girl",
+    "cartoon",
+    "stylised",
+    "dancer"
+   ]
+  },
+  "photographer_rig": {
+   "category": "person",
+   "description": "man in a cap, field jacket, cargo trousers and neckerchief",
+   "tags": [
+    "man",
+    "photographer",
+    "outdoors",
+    "hiker",
+    "film crew"
+   ]
+  },
+  "rb_business_female_01_rig": {
+   "category": "person",
+   "description": "woman in a black business suit with her dark hair tied back",
+   "tags": [
+    "woman",
+    "office",
+    "business",
+    "suit",
+    "manager"
+   ]
+  },
+  "rb_business_male_01_rig": {
+   "category": "person",
+   "description": "man in a black business suit, white shirt and red tie",
+   "tags": [
+    "man",
+    "office",
+    "business",
+    "suit",
+    "customer"
+   ]
+  },
+  "rb_chef_female_01_rig": {
+   "category": "person",
+   "description": "woman in chef's whites: white jacket, long white apron and cap",
+   "tags": [
+    "woman",
+    "chef",
+    "cook",
+    "kitchen",
+    "barista",
+    "baker"
+   ]
+  },
+  "rb_construction_male_01_rig": {
+   "category": "person",
+   "description": "construction worker in a white hard hat, plaid shirt, jeans and tool belt",
+   "tags": [
+    "man",
+    "construction",
+    "builder",
+    "worker"
+   ]
+  },
+  "rb_construction_male_02_rig": {
+   "category": "person",
+   "description": "construction worker in a white hard hat and blue work overalls",
+   "tags": [
+    "man",
+    "construction",
+    "worker",
+    "mechanic",
+    "warehouse"
+   ]
+  },
+  "rb_delivery_male_01_rig": {
+   "category": "person",
+   "description": "man in a red plaid shirt, jeans and beanie",
+   "tags": [
+    "man",
+    "delivery",
+    "courier",
+    "casual",
+    "labourer"
+   ]
+  },
+  "rb_female_adult_01_rig": {
+   "category": "person",
+   "description": "young blonde woman with a ponytail in a pink blouse and jeans",
+   "tags": [
+    "woman",
+    "casual",
+    "young"
+   ]
+  },
+  "rb_female_adult_05_rig": {
+   "category": "person",
+   "description": "dark-haired woman in a light pink blazer and jeans",
+   "tags": [
+    "woman",
+    "smart casual",
+    "teacher",
+    "office"
+   ]
+  },
+  "rb_gardener_male_01_rig": {
+   "category": "person",
+   "description": "gardener in brown overalls, green gloves and yellow rubber boots",
+   "tags": [
+    "man",
+    "gardener",
+    "farmer",
+    "outdoors"
+   ]
+  },
+  "rb_male_adult_03_rig": {
+   "category": "person",
+   "description": "older grey-haired man in a dark brown blazer and dark trousers",
+   "tags": [
+    "man",
+    "older",
+    "grandfather",
+    "owner",
+    "casual"
+   ]
+  },
+  "rb_male_adult_08_rig": {
+   "category": "person",
+   "description": "young man in a light blue shirt and dark trousers",
+   "tags": [
+    "man",
+    "young",
+    "casual",
+    "office"
+   ]
+  },
+  "rb_sports_female_02_rig": {
+   "category": "person",
+   "description": "woman in a grey tank top, black leggings and trainers",
+   "tags": [
+    "woman",
+    "athletic",
+    "sport",
+    "trainer",
+    "fitness",
+    "coach"
+   ]
+  },
+  "rb_sports_male_01_rig": {
+   "category": "person",
+   "description": "shirtless man in swimming trunks, barefoot",
+   "tags": [
+    "man",
+    "swimmer",
+    "beach",
+    "athletic"
+   ]
+  },
+  "rb_sports_male_02_rig": {
+   "category": "person",
+   "description": "footballer in a black-and-white striped number 18 jersey, shorts, socks and boots",
+   "tags": [
+    "man",
+    "football",
+    "soccer",
+    "athlete"
+   ]
+  },
+  "rb_sports_male_04_rig": {
+   "category": "person",
+   "description": "man in a navy sleeveless top, white shorts and trainers",
+   "tags": [
+    "man",
+    "runner",
+    "jogger",
+    "athletic",
+    "fitness"
+   ]
+  },
+  "readyplayer_rig": {
+   "category": "person",
+   "description": "stylised man in a brown three-piece suit and hat (Ready Player Me avatar, cartoon proportions)",
+   "tags": [
+    "man",
+    "stylised",
+    "cartoon",
+    "gentleman"
+   ]
+  },
+  "sf_chimp_sfm_rig": {
+   "category": "animal",
+   "description": "adult chimpanzee on a humanoid (Mixamo-style) skeleton, so human motion capture maps onto it",
+   "tags": [
+    "ape",
+    "chimpanzee",
+    "monkey",
+    "macaque stand-in",
+    "primate"
+   ]
+  },
+  "sf_dog_gsd_puppyclub_rig": {
+   "category": "animal",
+   "description": "German shepherd, large black-and-tan dog (0.75 m to the ear tips, 1.2 m long), with an anatomical leg skeleton (thigh, shin, foot, toe) that folds into a natural sit and lie",
+   "tags": [
+    "dog",
+    "German shepherd",
+    "Alsatian",
+    "quadruped",
+    "pet"
+   ]
+  },
+  "sf_dog_wolf_roo3d_rig": {
+   "category": "animal",
+   "description": "grey wolf (0.8 m tall, 1.4 m long) with its own clips",
+   "tags": [
+    "wolf",
+    "dog",
+    "canine",
+    "quadruped",
+    "wild"
+   ]
+  },
+  "sf_rp_carla_rig": {
+   "category": "person",
+   "description": "photo-scanned woman in a black leather jacket and grey trousers",
+   "tags": [
+    "woman",
+    "photoreal",
+    "scan",
+    "casual"
+   ]
+  },
+  "sf_rp_claudia_rig": {
+   "category": "person",
+   "description": "photo-scanned blonde woman in a white blouse, light trousers and heels",
+   "tags": [
+    "woman",
+    "photoreal",
+    "scan",
+    "smart"
+   ]
+  },
+  "sf_rp_eric_rig": {
+   "category": "person",
+   "description": "photo-scanned man in a white shirt, black waistcoat and black trousers",
+   "tags": [
+    "man",
+    "photoreal",
+    "scan",
+    "formal",
+    "waiter"
+   ]
+  },
+  "soldier_rig": {
+   "category": "person",
+   "description": "armoured sci-fi soldier in a helmet and tan body armour, with walk / run / idle clips",
+   "tags": [
+    "soldier",
+    "armour",
+    "sci-fi",
+    "game character"
+   ]
+  },
+  "woman_casual_rig": {
+   "category": "person",
+   "description": "woman in a teal long-sleeved top and denim shorts",
+   "tags": [
+    "woman",
+    "casual",
+    "summer"
+   ]
+  },
+  "xbot_rig": {
+   "category": "other",
+   "description": "faceless pink mannequin (Mixamo X Bot) with locomotion clips",
+   "tags": [
+    "mannequin",
+    "dummy",
+    "humanoid",
+    "placeholder"
+   ]
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "note": "Bodies of the benchmark briefs that are legitimately unsupported without being ballistic (flight, buoyancy). Falls, drops, throws and jumps are handled by the ballistic test for every brief. Tokens are matched against body-name and identity tokens. Entries only remove bodies from scoring and make them support sources; they never make support between other bodies.",
+ "tasks": {
+  "B14": {
+   "description": "crow opens a puzzle feeder",
+   "self_propelled_airborne": ["crow", "bird"]
+  },
+  "B20": {
+   "description": "tipping bucket fills a tank",
+   "buoyant": ["float"],
+   "fluid_tokens": ["water"]
+  },
+  "B22": {
+   "description": "drawbridge opens for a boat",
+   "buoyant": ["boat", "buoy", "buoys", "hull", "launch"],
+   "fluid_tokens": ["water"]
+  }
+ }
+}

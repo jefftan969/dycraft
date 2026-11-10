@@ -1,0 +1,194 @@
+{
+  "schema": "dycraft.anatomical_limits.v1",
+  "object": "g1_humanoid_dex1",
+  "notes": "Ranges may only ever be tightened, never widened: the hardware limits in the ObjectIR remain authoritative. The overlay is found by the object's name, so every build of this G1 gets it. Each range stops where a pose stops reading as natural, not only where the body would break.",
+  "limits": {
+    "left_knee_joint": {
+      "limits_deg": [
+        0.0,
+        165.0
+      ],
+      "hardware_deg": [
+        -5.0,
+        165.0
+      ],
+      "guards": "Backward knee"
+    },
+    "right_knee_joint": {
+      "limits_deg": [
+        0.0,
+        165.0
+      ],
+      "hardware_deg": [
+        -5.0,
+        165.0
+      ],
+      "guards": "Backward knee"
+    },
+    "left_elbow_joint": {
+      "limits_deg": [
+        -60.0,
+        80.0
+      ],
+      "hardware_deg": [
+        -60.0,
+        120.0
+      ],
+      "guards": "Backward (hyperextended) elbow; about 80 deg is a straight arm, larger values bend the forearm behind the upper arm"
+    },
+    "right_elbow_joint": {
+      "limits_deg": [
+        -60.0,
+        80.0
+      ],
+      "hardware_deg": [
+        -60.0,
+        120.0
+      ],
+      "guards": "Backward (hyperextended) elbow; about 80 deg is a straight arm, larger values bend the forearm behind the upper arm"
+    },
+    "left_hip_pitch_joint": {
+      "limits_deg": [
+        -125.0,
+        30.0
+      ],
+      "hardware_deg": [
+        -145.0,
+        165.0
+      ],
+      "guards": "Leg swung backwards past a natural stride (positive is extension); forward flexion beyond a deep squat"
+    },
+    "right_hip_pitch_joint": {
+      "limits_deg": [
+        -125.0,
+        30.0
+      ],
+      "hardware_deg": [
+        -145.0,
+        165.0
+      ],
+      "guards": "Leg swung backwards past a natural stride (positive is extension); forward flexion beyond a deep squat"
+    },
+    "left_hip_roll_joint": {
+      "limits_deg": [
+        -30.0,
+        45.0
+      ],
+      "hardware_deg": [
+        -30.0,
+        170.0
+      ],
+      "guards": "Leg abducted into a split or crossed far over the other leg"
+    },
+    "right_hip_roll_joint": {
+      "limits_deg": [
+        -45.0,
+        30.0
+      ],
+      "hardware_deg": [
+        -170.0,
+        30.0
+      ],
+      "guards": "Leg abducted into a split or crossed far over the other leg"
+    },
+    "left_hip_yaw_joint": {
+      "limits_deg": [
+        -45.0,
+        45.0
+      ],
+      "hardware_deg": [
+        -158.0,
+        158.0
+      ],
+      "guards": "Foot turned out or in past a natural stance"
+    },
+    "right_hip_yaw_joint": {
+      "limits_deg": [
+        -45.0,
+        45.0
+      ],
+      "hardware_deg": [
+        -158.0,
+        158.0
+      ],
+      "guards": "Foot turned out or in past a natural stance"
+    },
+    "waist_yaw_joint": {
+      "limits_deg": [
+        -60.0,
+        60.0
+      ],
+      "hardware_deg": [
+        -150.0,
+        150.0
+      ],
+      "guards": "Torso twisted past a natural rotation on the pelvis"
+    },
+    "left_shoulder_pitch_joint": {
+      "limits_deg": [
+        -176.99,
+        50.0
+      ],
+      "hardware_deg": [
+        -177.0,
+        153.0
+      ],
+      "guards": "Arm swung backwards and up behind the body"
+    },
+    "left_shoulder_yaw_joint": {
+      "limits_deg": [
+        -90.0,
+        90.0
+      ],
+      "hardware_deg": [
+        -150.0,
+        150.0
+      ],
+      "guards": "Upper arm twisted until the forearm points backwards"
+    },
+    "left_wrist_yaw_joint": {
+      "limits_deg": [
+        -30.0,
+        30.0
+      ],
+      "hardware_deg": [
+        -92.5,
+        92.5
+      ],
+      "guards": "Hand bent sideways past natural wrist deviation"
+    },
+    "right_shoulder_pitch_joint": {
+      "limits_deg": [
+        -176.99,
+        50.0
+      ],
+      "hardware_deg": [
+        -177.0,
+        153.0
+      ],
+      "guards": "Arm swung backwards and up behind the body"
+    },
+    "right_shoulder_yaw_joint": {
+      "limits_deg": [
+        -90.0,
+        90.0
+      ],
+      "hardware_deg": [
+        -150.0,
+        150.0
+      ],
+      "guards": "Upper arm twisted until the forearm points backwards"
+    },
+    "right_wrist_yaw_joint": {
+      "limits_deg": [
+        -30.0,
+        30.0
+      ],
+      "hardware_deg": [
+        -92.5,
+        92.5
+      ],
+      "guards": "Hand bent sideways past natural wrist deviation"
+    }
+  }
+}

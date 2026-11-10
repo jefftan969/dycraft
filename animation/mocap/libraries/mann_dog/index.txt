@@ -1,0 +1,1065 @@
+D1_001_KAN01_001	   0.0-  11.0s	stand
+D1_001_KAN01_001	  11.0-  12.6s	walk	0.32 m/s
+D1_001_KAN01_001	  12.6-  25.1s	stand
+D1_001_KAN01_001	  25.1-  25.5s	walk	0.39 m/s
+D1_003_KAN01_001	   0.0-  15.9s	sit
+D1_004_KAN01_001	   0.0-  11.0s	sit
+D1_004_KAN01_001	  11.0-  12.6s	walk	0.45 m/s ; starts with: stand up from sit (around 11.0s)
+D1_004_KAN01_001	  12.6-  15.9s	stand
+D1_005_KAN01_001	   0.0-  13.3s	lie
+D1_005_KAN01_001	  13.3-  14.0s	walk	0.31 m/s ; starts with: get up from lying (around 13.3s)
+D1_005_KAN01_001	  14.0-  16.6s	stand
+D1_006_KAN01_001	   0.0-   9.8s	lie
+D1_006_KAN01_001	   9.8-  12.6s	sit	starts with: lie -> sit up (around 9.8s)
+D1_006_KAN01_001	  12.6-  13.1s	walk	0.26 m/s ; starts with: stand up from sit (around 12.6s)
+D1_006_KAN01_001	  13.1-  16.3s	stand
+D1_006_KAN01_002	   0.0-  14.8s	lie
+D1_006_KAN01_002	  14.8-  15.2s	sit	starts with: lie -> sit up (around 14.8s)
+D1_006_KAN01_002	  15.2-  17.1s	walk	0.46 m/s ; starts with: stand up from sit (around 15.2s)
+D1_006_KAN01_002	  17.1-  22.7s	stand
+D1_007_KAN01_001	   0.0-   1.2s	sit
+D1_007_KAN01_001	   1.2-   3.0s	walk	0.97 m/s ; starts with: stand up from sit (around 1.2s)
+D1_007_KAN01_001	   3.0-   8.2s	trot	1.14 m/s
+D1_007_KAN01_001	   8.2-   9.9s	walk	1.00 m/s
+D1_008_KAN01_001	   0.0-   4.5s	sit
+D1_008_KAN01_001	   4.5-   6.2s	walk	0.92 m/s ; starts with: stand up from sit (around 4.5s)
+D1_008_KAN01_001	   6.2-   6.8s	walk, turning left	0.93 m/s
+D1_008_KAN01_001	   6.8-  10.3s	walk	0.83 m/s
+D1_008_KAN01_001	  10.3-  11.1s	walk, turning right	0.79 m/s
+D1_008_KAN01_001	  11.1-  12.6s	walk	1.05 m/s
+D1_008_KAN01_001	  12.6-  13.5s	walk, turning left	0.85 m/s
+D1_008_KAN01_001	  13.5-  14.8s	walk	0.88 m/s
+D1_008_KAN01_001	  14.8-  15.4s	walk, turning right	0.97 m/s
+D1_008_KAN01_001	  15.4-  17.9s	walk	0.96 m/s
+D1_008_KAN01_002	   0.0-   0.7s	walk	0.37 m/s
+D1_008_KAN01_002	   0.7-   6.5s	sit	starts with: sit down (around 0.7s)
+D1_008_KAN01_002	   6.5-   8.2s	walk	0.92 m/s ; starts with: stand up from sit (around 6.5s)
+D1_008_KAN01_002	   8.2-   9.2s	trot	1.25 m/s
+D1_008_KAN01_002	   9.2-   9.7s	walk, turning left	1.04 m/s
+D1_008_KAN01_002	   9.7-  10.8s	walk	1.03 m/s
+D1_008_KAN01_002	  10.8-  15.2s	trot	1.21 m/s
+D1_009_KAN01_001	   0.0-   2.6s	stand
+D1_009_KAN01_001	   2.6-   3.3s	walk	0.65 m/s
+D1_009_KAN01_001	   3.3-   9.1s	trot	1.52 m/s
+D1_009_KAN01_002	   0.0-   3.6s	sit
+D1_009_KAN01_002	   3.6-   9.1s	trot	1.84 m/s ; starts with: stand up from sit (around 3.6s)
+D1_010_KAN01_001	   0.0-   6.2s	sit
+D1_010_KAN01_001	   6.2-   6.7s	trot	1.64 m/s ; starts with: stand up from sit (around 6.2s)
+D1_010_KAN01_001	   6.7-   9.4s	canter/gallop	3.30 m/s
+D1_010_KAN01_002	   0.0-   2.6s	canter/gallop	4.08 m/s
+D1_010_KAN01_003	   0.0-   0.4s	trot	2.00 m/s
+D1_010_KAN01_003	   0.4-   3.4s	canter/gallop	3.15 m/s
+D1_010_KAN01_004	   0.0-   2.1s	canter/gallop	4.06 m/s
+D1_010_KAN01_004	   2.1-   2.8s	walk, turning right	0.65 m/s
+D1_010_KAN01_004	   2.8-   6.0s	canter/gallop	2.70 m/s
+D1_013_KAN01_001	   0.0-   2.4s	sit
+D1_013_KAN01_001	   2.4-   2.8s	walk	0.23 m/s ; starts with: stand up from sit (around 2.4s)
+D1_013_KAN01_001	   2.8-   8.7s	stand
+D1_013_KAN01_001	   8.7-  14.2s	sit	starts with: sit down (around 8.7s)
+D1_013_KAN01_001	  14.2-  21.9s	lie	starts with: sit -> lie down (around 14.2s)
+D1_013_KAN01_001	  21.9-  22.3s	crouch/transition
+D1_013_KAN01_001	  22.3-  27.6s	sit	starts with: lie -> sit up (around 22.3s)
+D1_013_KAN01_001	  27.6-  28.1s	walk	0.22 m/s ; starts with: stand up from sit (around 27.6s)
+D1_013_KAN01_001	  28.1-  32.1s	stand
+D1_013_KAN01_001	  32.1-  32.6s	walk	0.20 m/s
+D1_013_KAN01_001	  32.6-  38.0s	lie	starts with: lie down (around 32.6s)
+D1_013_KAN01_001	  38.0-  38.9s	walk	0.48 m/s ; starts with: get up from lying (around 38.0s)
+D1_013_KAN01_001	  38.9-  47.3s	stand
+D1_025_KAN01_001	   0.0-   2.9s	sit
+D1_025_KAN01_001	   2.9-   6.6s	walk	0.96 m/s ; starts with: stand up from sit (around 2.9s)
+D1_025_KAN01_001	   6.6-   7.8s	trot	1.15 m/s
+D1_025_KAN01_001	   7.8-   9.7s	walk	0.72 m/s
+D1_025_KAN01_001	   9.7-  17.9s	sit	starts with: sit down (around 9.7s)
+D1_031_KAN01_001	   0.0-   7.8s	sit
+D1_031_KAN01_001	   7.8-  11.4s	trot	2.00 m/s ; starts with: stand up from sit (around 7.8s)
+D1_031_KAN01_001	  11.4-  12.4s	walk	0.54 m/s
+D1_031_KAN01_001	  12.4-  21.1s	sit	starts with: sit down (around 12.4s)
+D1_045_KAN01_001	   0.0-   2.3s	lie
+D1_045_KAN01_001	   2.3-   6.2s	trot	1.70 m/s ; starts with: get up from lying (around 2.3s)
+D1_045_KAN01_001	   6.2-   7.5s	walk	0.47 m/s
+D1_045_KAN01_001	   7.5-  22.5s	lie	starts with: lie down (around 7.5s)
+D1_047_KAN01_001	   0.0-   4.8s	sit
+D1_047_KAN01_001	   4.8-  12.2s	walk, turning right	0.51 m/s ; starts with: stand up from sit (around 4.8s)
+D1_047_KAN01_001	  12.2-  12.6s	stand
+D1_047_KAN01_001	  12.6-  17.4s	sit	starts with: sit down (around 12.6s)
+D1_047_KAN01_001	  17.4-  18.0s	walk	0.48 m/s ; starts with: stand up from sit (around 17.4s)
+D1_047z_KAN01_002	   0.0-   0.6s	stand
+D1_047z_KAN01_002	   0.6-   1.0s	walk	0.37 m/s
+D1_047z_KAN01_002	   1.0-   1.8s	walk, turning left	0.68 m/s
+D1_047z_KAN01_002	   1.8-   3.3s	walk	0.69 m/s
+D1_047z_KAN01_002	   3.3-   5.7s	stand
+D1_047z_KAN01_002	   5.7-   6.2s	walk	0.17 m/s
+D1_047z_KAN01_002	   6.2-  10.9s	stand
+D1_047z_KAN01_002	  10.9-  11.6s	walk, turning left	0.67 m/s
+D1_047z_KAN01_002	  11.6-  12.1s	trot, turning left	1.78 m/s
+D1_047z_KAN01_002	  12.1-  13.6s	canter/gallop	2.98 m/s
+D1_047z_KAN01_003	   0.0-   0.5s	walk	0.58 m/s
+D1_047z_KAN01_003	   0.5-   1.1s	walk, turning right	0.60 m/s
+D1_047z_KAN01_003	   1.1-   1.6s	walk	0.36 m/s
+D1_047z_KAN01_003	   1.6-   2.6s	walk, turning left	0.28 m/s
+D1_047z_KAN01_003	   2.6-   3.2s	walk, turning right	0.34 m/s
+D1_047z_KAN01_003	   3.2-   4.0s	walk, turning left	0.59 m/s
+D1_047z_KAN01_003	   4.0-   5.2s	walk, turning right	0.50 m/s
+D1_047z_KAN01_003	   5.2-   6.2s	walk, turning left	0.72 m/s
+D1_047z_KAN01_003	   6.2-   7.7s	walk	0.43 m/s
+D1_047z_KAN01_003	   7.7-   9.0s	walk, turning right	0.40 m/s
+D1_047z_KAN01_003	   9.0-  10.9s	walk, turning left	0.39 m/s
+D1_047z_KAN01_003	  10.9-  13.1s	walk	0.34 m/s
+D1_047z_KAN01_003	  13.1-  14.6s	stand
+D1_047z_KAN01_003	  14.6-  15.5s	walk	0.28 m/s
+D1_047z_KAN01_003	  15.5-  16.9s	stand
+D1_047z_KAN01_003	  16.9-  18.4s	walk, turning right	0.45 m/s
+D1_047z_KAN01_003	  18.4-  21.0s	walk	0.49 m/s
+D1_047z_KAN01_003	  21.0-  21.5s	walk, turning left	0.43 m/s
+D1_047z_KAN01_003	  21.5-  22.1s	walk	0.17 m/s
+D1_047z_KAN01_003	  22.1-  22.6s	stand
+D1_047z_KAN01_003	  22.6-  24.2s	walk	0.21 m/s
+D1_047z_KAN01_003	  24.2-  25.0s	stand
+D1_047z_KAN01_003	  25.0-  27.6s	walk	0.36 m/s
+D1_047z_KAN01_003	  27.6-  28.9s	stand
+D1_047z_KAN01_003	  28.9-  29.4s	walk	0.18 m/s
+D1_047z_KAN01_003	  29.4-  31.8s	stand
+D1_047z_KAN01_003	  31.8-  32.6s	walk	0.21 m/s
+D1_047z_KAN01_003	  32.6-  34.4s	stand
+D1_047z_KAN01_003	  34.4-  37.5s	walk	0.35 m/s
+D1_047z_KAN01_003	  37.5-  40.6s	stand
+D1_047z_KAN01_003	  40.6-  41.1s	walk	0.17 m/s
+D1_047z_KAN01_003	  41.1-  41.9s	stand
+D1_047z_KAN01_003	  41.9-  43.4s	walk	0.22 m/s
+D1_047z_KAN01_003	  43.4-  44.0s	stand
+D1_047z_KAN01_003	  44.0-  45.1s	walk	0.28 m/s
+D1_047z_KAN01_003	  45.1-  47.6s	stand
+D1_047z_KAN01_003	  47.6-  48.5s	walk	0.23 m/s
+D1_047z_KAN01_003	  48.5-  48.9s	turn in place left
+D1_047z_KAN01_003	  48.9-  52.0s	stand
+D1_047z_KAN01_003	  52.0-  52.7s	walk, turning right	0.25 m/s
+D1_047z_KAN01_003	  52.7-  53.8s	walk, turning left	0.35 m/s
+D1_047z_KAN01_003	  53.8-  54.6s	walk	0.42 m/s
+D1_047z_KAN01_003	  54.6-  55.3s	stand
+D1_047z_KAN01_003	  55.3-  55.8s	turn in place right
+D1_047z_KAN01_003	  55.8-  56.5s	stand
+D1_047z_KAN01_003	  56.5-  56.9s	walk, turning left	0.38 m/s
+D1_047z_KAN01_003	  56.9-  58.5s	walk, turning right	0.64 m/s
+D1_047z_KAN01_003	  58.5-  59.4s	walk, turning left	0.67 m/s
+D1_047z_KAN01_003	  59.4-  61.8s	sit	starts with: sit down (around 59.4s)
+D1_047z_KAN01_003	  61.8-  64.0s	walk	0.25 m/s ; starts with: stand up from sit (around 61.8s)
+D1_047z_KAN01_003	  64.0-  65.2s	stand
+D1_047z_KAN01_003	  65.2-  65.7s	walk	0.21 m/s
+D1_047z_KAN01_003	  65.7-  66.8s	stand
+D1_047z_KAN01_003	  66.8-  68.5s	walk, turning right	0.54 m/s
+D1_047z_KAN01_003	  68.5-  69.8s	walk	0.35 m/s
+D1_047z_KAN01_003	  69.8-  70.6s	stand
+D1_047z_KAN01_003	  70.6-  72.2s	sit	starts with: sit down (around 70.6s)
+D1_047z_KAN01_003	  72.2-  72.8s	walk	0.71 m/s ; starts with: stand up from sit (around 72.2s)
+D1_047z_KAN01_003	  72.8-  77.5s	sit	starts with: sit down (around 72.8s)
+D1_047z_KAN01_003	  77.5-  78.1s	walk	0.16 m/s ; starts with: stand up from sit (around 77.5s)
+D1_047z_KAN01_004	   0.0-   1.1s	stand
+D1_047z_KAN01_004	   1.1-   3.2s	walk	0.24 m/s
+D1_047z_KAN01_004	   3.2-   4.9s	walk, turning left	0.51 m/s
+D1_047z_KAN01_004	   4.9-   5.9s	walk, turning right	0.61 m/s
+D1_047z_KAN01_004	   5.9-   7.5s	walk, turning left	0.57 m/s
+D1_047z_KAN01_004	   7.5-   8.4s	walk, turning right	0.49 m/s
+D1_047z_KAN01_004	   8.4-   9.0s	walk	0.58 m/s
+D1_047z_KAN01_004	   9.0-   9.9s	walk, turning right	0.30 m/s
+D1_047z_KAN01_004	   9.9-  11.4s	walk, turning left	0.22 m/s
+D1_047z_KAN01_004	  11.4-  12.7s	walk	0.21 m/s
+D1_047z_KAN01_004	  12.7-  17.2s	stand
+D1_047z_KAN01_004	  17.2-  17.6s	turn in place right
+D1_047z_KAN01_005	   0.0-   1.3s	walk	0.27 m/s
+D1_047z_KAN01_005	   1.3-   2.2s	walk, turning right	0.55 m/s
+D1_047z_KAN01_005	   2.2-   4.0s	walk	0.35 m/s
+D1_047z_KAN01_005	   4.0-   4.6s	walk, turning right	0.39 m/s
+D1_047z_KAN01_005	   4.6-   7.7s	walk	0.62 m/s
+D1_047z_KAN01_005	   7.7-   8.8s	walk, turning right	0.73 m/s
+D1_047z_KAN01_005	   8.8-  10.2s	stand
+D1_047z_KAN01_005	  10.2-  10.7s	walk, turning left	0.39 m/s
+D1_047z_KAN01_005	  10.7-  12.5s	walk	0.35 m/s
+D1_047z_KAN01_005	  12.5-  13.4s	walk, turning right	0.64 m/s
+D1_047z_KAN01_005	  13.4-  15.9s	walk	0.44 m/s
+D1_047z_KAN01_005	  15.9-  16.4s	walk, turning right	0.43 m/s
+D1_047z_KAN01_005	  16.4-  19.3s	walk	0.63 m/s
+D1_047z_KAN01_005	  19.3-  19.9s	walk, turning right	0.58 m/s
+D1_047z_KAN01_005	  19.9-  20.9s	walk	0.90 m/s
+D1_047z_KAN01_005	  20.9-  22.3s	walk, turning left	0.51 m/s
+D1_047z_KAN01_005	  22.3-  22.7s	walk, nose down (sniff), turning left	0.50 m/s
+D1_047z_KAN01_005	  22.7-  24.3s	walk	0.61 m/s
+D1_047z_KAN01_005	  24.3-  24.7s	walk, turning left	0.96 m/s
+D1_047z_KAN01_005	  24.7-  25.8s	walk	0.81 m/s
+D1_047z_KAN01_005	  25.8-  27.6s	walk, nose down (sniff)	0.20 m/s
+D1_047z_KAN01_005	  27.6-  28.2s	walk, nose down (sniff), turning left	0.23 m/s
+D1_047z_KAN01_005	  28.2-  29.1s	stand
+D1_047z_KAN01_005	  29.1-  30.4s	walk, turning right	0.39 m/s
+D1_047z_KAN01_005	  30.4-  31.2s	stand
+D1_047z_KAN01_005	  31.2-  36.5s	walk	0.24 m/s
+D1_047z_KAN01_005	  36.5-  37.0s	stand
+D1_047z_KAN01_005	  37.0-  40.6s	walk	0.27 m/s
+D1_047z_KAN01_005	  40.6-  42.2s	stand
+D1_047z_KAN01_005	  42.2-  43.3s	walk	0.39 m/s
+D1_047z_KAN01_005	  43.3-  44.2s	walk, turning right	0.80 m/s
+D1_047z_KAN01_005	  44.2-  44.8s	walk	0.96 m/s
+D1_047z_KAN01_005	  44.8-  45.9s	walk, turning left	0.31 m/s
+D1_049_KAN01_001	   0.0-   3.3s	sit
+D1_049_KAN01_001	   3.3-   3.8s	crouch/transition
+D1_049_KAN01_001	   3.8-  10.7s	walk, turning left	0.80 m/s ; starts with: stand up from sit (around 3.8s)
+D1_049_KAN01_001	  10.7-  14.8s	sit	starts with: sit down (around 10.7s)
+D1_053_KAN01_001	   0.0-   2.0s	walk	0.74 m/s
+D1_053_KAN01_001	   2.0-   3.5s	walk, turning left	0.47 m/s
+D1_053_KAN01_001	   3.5-   4.2s	walk	0.77 m/s
+D1_053_KAN01_001	   4.2-   5.9s	walk, turning right	0.49 m/s
+D1_053_KAN01_001	   5.9-   7.7s	walk	0.87 m/s
+D1_053_KAN01_001	   7.7-   8.1s	walk, turning right	0.79 m/s
+D1_053_KAN01_001	   8.1-  10.0s	walk	0.34 m/s
+D1_053_KAN01_001	  10.0-  11.0s	walk, turning right	0.38 m/s
+D1_053_KAN01_001	  11.0-  12.2s	walk	0.54 m/s
+D1_053_KAN01_001	  12.2-  13.1s	walk, turning right	0.84 m/s
+D1_053_KAN01_001	  13.1-  16.6s	walk	0.76 m/s
+D1_053_KAN01_001	  16.6-  18.7s	walk, turning right	0.70 m/s
+D1_053_KAN01_001	  18.7-  20.2s	walk	0.91 m/s
+D1_053_KAN01_001	  20.2-  22.1s	walk, turning left	0.55 m/s
+D1_053_KAN01_001	  22.1-  23.9s	walk	0.85 m/s
+D1_053_KAN01_001	  23.9-  24.4s	walk, turning left	1.01 m/s
+D1_053_KAN01_001	  24.4-  26.2s	walk	0.65 m/s
+D1_053_KAN01_001	  26.2-  27.1s	walk, turning left	0.51 m/s
+D1_053_KAN01_001	  27.1-  28.8s	walk	0.41 m/s
+D1_053_KAN01_001	  28.8-  29.8s	walk, turning left	0.44 m/s
+D1_053_KAN01_001	  29.8-  37.8s	walk	0.48 m/s
+D1_053_KAN01_001	  37.8-  39.0s	walk, turning right	0.56 m/s
+D1_053_KAN01_001	  39.0-  39.6s	walk	0.97 m/s
+D1_053_KAN01_001	  39.6-  41.0s	walk, turning left	0.61 m/s
+D1_053_KAN01_001	  41.0-  42.1s	stand
+D1_053_KAN01_001	  42.1-  43.7s	walk	0.50 m/s
+D1_053_KAN01_001	  43.7-  44.4s	crouch/transition
+D1_053_KAN01_001	  44.4-  44.8s	walk	0.88 m/s
+D1_053_KAN01_001	  44.8-  45.7s	sit	starts with: sit down (around 44.8s)
+D1_053_KAN01_001	  45.7-  46.5s	walk	0.55 m/s ; starts with: stand up from sit (around 45.7s)
+D1_053_KAN01_001	  46.5-  47.5s	walk, turning left	0.45 m/s
+D1_053_KAN01_001	  47.5-  48.1s	walk	0.66 m/s
+D1_053_KAN01_001	  48.1-  49.7s	walk, turning right	0.67 m/s
+D1_053_KAN01_001	  49.7-  52.0s	walk	0.36 m/s
+D1_053_KAN01_001	  52.0-  53.4s	walk, turning left	0.34 m/s
+D1_053_KAN01_001	  53.4-  54.3s	walk, turning right	0.47 m/s
+D1_053_KAN01_001	  54.3-  57.2s	stand
+D1_053_KAN01_001	  57.2-  57.8s	walk	0.32 m/s
+D1_053_KAN01_001	  57.8-  58.2s	walk, turning left	0.41 m/s
+D1_053_KAN01_001	  58.2-  64.5s	stand
+D1_053_KAN01_001	  64.5-  65.5s	walk	0.41 m/s
+D1_053_KAN01_001	  65.5-  66.1s	walk, turning right	0.33 m/s
+D1_053_KAN01_001	  66.1-  67.1s	stand
+D1_053_KAN01_001	  67.1-  67.6s	walk, turning right	0.24 m/s
+D1_053_KAN01_001	  67.6-  68.3s	walk	0.68 m/s
+D1_053_KAN01_001	  68.3-  69.4s	walk, turning left	0.65 m/s
+D1_053_KAN01_001	  69.4-  70.6s	walk	0.49 m/s
+D1_053_KAN01_001	  70.6-  72.3s	walk, turning right	0.61 m/s
+D1_053_KAN01_002	   0.0-   2.0s	canter/gallop	3.31 m/s
+D1_053_KAN01_002	   2.0-   2.6s	walk	1.18 m/s
+D1_053_KAN01_002	   2.6-   3.4s	walk, turning right	0.57 m/s
+D1_053_KAN01_002	   3.4-   5.4s	canter/gallop	2.67 m/s
+D1_053_KAN01_002	   5.4-   5.8s	canter/gallop, turning right	2.48 m/s
+D1_053_KAN01_002	   5.8-   7.8s	trot, turning right	1.62 m/s
+D1_053_KAN01_002	   7.8-  10.1s	canter/gallop	2.73 m/s
+D1_053_KAN01_002	  10.1-  10.5s	trot, turning left	1.46 m/s
+D1_053_KAN01_002	  10.5-  11.5s	walk, turning left	0.75 m/s
+D1_053_KAN01_002	  11.5-  12.3s	trot, turning left	1.42 m/s
+D1_053_KAN01_002	  12.3-  14.7s	trot	1.45 m/s
+D1_053_KAN01_002	  14.7-  16.4s	walk	0.64 m/s
+D1_053_KAN01_002	  16.4-  17.7s	walk, turning right	0.51 m/s
+D1_053_KAN01_002	  17.7-  19.3s	walk	0.85 m/s
+D1_053_KAN01_002	  19.3-  20.2s	walk, turning left	0.29 m/s
+D1_053_KAN01_002	  20.2-  21.7s	walk	0.33 m/s
+D1_053_KAN01_002	  21.7-  22.8s	walk, nose down (sniff)	0.20 m/s
+D1_053_KAN01_002	  22.8-  23.2s	walk	0.28 m/s
+D1_053_KAN01_002	  23.2-  24.3s	walk, turning right	0.49 m/s
+D1_053_KAN01_002	  24.3-  27.4s	walk	0.24 m/s
+D1_053_KAN01_002	  27.4-  27.8s	stand
+D1_053_KAN01_002	  27.8-  29.4s	walk	0.30 m/s
+D1_053_KAN01_002	  29.4-  30.0s	walk, turning left	0.22 m/s
+D1_053_KAN01_002	  30.0-  30.8s	walk	0.26 m/s
+D1_053_KAN01_002	  30.8-  31.7s	stand
+D1_053_KAN01_002	  31.7-  32.2s	walk	0.18 m/s
+D1_053_KAN01_002	  32.2-  33.8s	stand
+D1_053_KAN01_002	  33.8-  34.1s	turn in place right
+D1_053_KAN01_002	  34.1-  34.9s	walk	0.19 m/s
+D1_053_KAN01_002	  34.9-  37.1s	stand
+D1_053_KAN01_002	  37.1-  37.8s	walk	0.42 m/s
+D1_053_KAN01_002	  37.8-  38.6s	walk, turning left	0.40 m/s
+D1_053_KAN01_002	  38.6-  39.1s	stand
+D1_053_KAN01_002	  39.1-  40.9s	walk	0.54 m/s
+D1_053_KAN01_002	  40.9-  42.1s	walk, turning right	0.49 m/s
+D1_053_KAN01_002	  42.1-  42.6s	turn in place right
+D1_053_KAN01_002	  42.6-  43.5s	walk	0.19 m/s
+D1_053_KAN01_002	  43.5-  44.9s	stand
+D1_053_KAN01_002	  44.9-  45.4s	walk	0.17 m/s
+D1_053_KAN01_002	  45.4-  49.7s	stand
+D1_053_KAN01_002	  49.7-  50.7s	walk	0.30 m/s
+D1_053_KAN01_002	  50.7-  51.8s	walk, turning left	0.28 m/s
+D1_053_KAN01_002	  51.8-  52.5s	walk	0.33 m/s
+D1_053_KAN01_002	  52.5-  54.0s	walk, turning right	0.51 m/s
+D1_053_KAN01_002	  54.0-  55.2s	stand
+D1_053_KAN01_002	  55.2-  56.5s	walk	0.37 m/s
+D1_053_KAN01_002	  56.5-  57.0s	stand
+D1_053_KAN01_002	  57.0-  57.7s	walk	0.23 m/s
+D1_053_KAN01_002	  57.7-  58.5s	stand
+D1_053_KAN01_002	  58.5-  58.9s	walk, turning left	0.27 m/s
+D1_053_KAN01_002	  58.9-  59.9s	walk	0.27 m/s
+D1_053_KAN01_002	  59.9-  63.0s	stand
+D1_053_KAN01_002	  63.0-  64.1s	walk, turning right	0.39 m/s
+D1_055_KAN01_001	   0.0-   1.1s	canter/gallop	2.98 m/s
+D1_055_KAN01_001	   1.1-   1.6s	trot	1.98 m/s
+D1_055_KAN01_001	   1.6-   2.7s	walk, turning left	0.79 m/s
+D1_055_KAN01_001	   2.7-   4.8s	walk	0.51 m/s
+D1_055_KAN01_001	   4.8-   5.4s	stand
+D1_055_KAN01_001	   5.4-   6.0s	walk	0.36 m/s
+D1_055_KAN01_001	   6.0-   6.9s	walk, turning left	0.43 m/s
+D1_055_KAN01_001	   6.9-   7.3s	walk	0.37 m/s
+D1_055_KAN01_001	   7.3-   8.5s	walk, turning right	0.56 m/s
+D1_055_KAN01_001	   8.5-   8.9s	walk	0.72 m/s
+D1_055_KAN01_001	   8.9-   9.8s	walk, turning right	0.57 m/s
+D1_055_KAN01_001	   9.8-  10.2s	walk	0.54 m/s
+D1_055_KAN01_001	  10.2-  10.8s	walk, turning left	0.72 m/s
+D1_055_KAN01_001	  10.8-  12.5s	walk	0.77 m/s
+D1_055_KAN01_001	  12.5-  14.0s	walk, turning left	0.52 m/s
+D1_055_KAN01_001	  14.0-  18.0s	walk	0.78 m/s
+D1_055_KAN01_001	  18.0-  37.9s	stand
+D1_055_KAN01_001	  37.9-  38.4s	walk	0.20 m/s
+D1_055_KAN01_001	  38.4-  47.7s	stand
+D1_055_KAN01_001	  47.7-  49.4s	walk	0.50 m/s
+D1_055_KAN01_001	  49.4-  52.1s	stand
+D1_055_KAN01_001	  52.1-  52.5s	walk, turning right	0.27 m/s
+D1_055_KAN01_001	  52.5-  55.6s	stand
+D1_055_KAN01_001	  55.6-  58.4s	walk, turning right	0.54 m/s
+D1_055_KAN01_001	  58.4-  58.8s	walk	0.25 m/s
+D1_055_KAN01_001	  58.8-  61.5s	stand
+D1_055_KAN01_001	  61.5-  62.0s	walk	0.21 m/s
+D1_055_KAN01_001	  62.0-  64.2s	stand
+D1_055_KAN01_001	  64.2-  65.8s	walk	0.44 m/s
+D1_055_KAN01_001	  65.8-  68.0s	sit	starts with: sit down (around 65.8s)
+D1_055_KAN01_001	  68.0-  68.6s	walk	0.23 m/s ; starts with: stand up from sit (around 68.0s)
+D1_055_KAN01_001	  68.6-  69.5s	walk, turning left	0.35 m/s
+D1_055_KAN01_001	  69.5-  70.5s	walk	0.84 m/s
+D1_055_KAN01_001	  70.5-  71.8s	walk, turning right	0.41 m/s
+D1_055_KAN01_001	  71.8-  74.2s	walk	0.52 m/s
+D1_055_KAN01_001	  74.2-  76.4s	stand
+D1_055_KAN01_001	  76.4-  76.8s	turn in place right
+D1_055_KAN01_001	  76.8-  93.6s	stand
+D1_055_KAN01_001	  93.6-  94.3s	walk	0.25 m/s
+D1_055_KAN01_001	  94.3-  95.7s	walk, turning right	0.41 m/s
+D1_055_KAN01_001	  95.7-  96.2s	walk	0.39 m/s
+D1_055_KAN01_001	  96.2-  98.0s	walk, turning left	0.41 m/s
+D1_055_KAN01_001	  98.0-  99.7s	walk	0.62 m/s
+D1_055_KAN01_001	  99.7- 103.6s	stand
+D1_055_KAN01_001	 103.6- 104.8s	walk	0.34 m/s
+D1_055_KAN01_001	 104.8- 110.7s	stand
+D1_055_KAN01_001	 110.7- 111.2s	walk	0.32 m/s
+D1_055_KAN01_001	 111.2- 112.8s	walk, turning right	0.65 m/s
+D1_055_KAN01_001	 112.8- 115.8s	walk	1.02 m/s
+D1_055_KAN01_001	 115.8- 117.2s	walk, turning right	0.80 m/s
+D1_055_KAN01_001	 117.2- 120.3s	walk	0.28 m/s
+D1_055_KAN01_001	 120.3- 128.1s	stand
+D1_055_KAN01_001	 128.1- 129.1s	stand, nose down (sniff)
+D1_055_KAN01_001	 129.1- 140.4s	stand
+D1_055_KAN01_001	 140.4- 142.0s	stand, nose down (sniff)
+D1_055_KAN01_001	 142.0- 177.5s	stand
+D1_055_KAN01_001	 177.5- 180.0s	stand, nose down (sniff)
+D1_055_KAN01_001	 180.0- 181.9s	stand
+D1_055_KAN01_001	 181.9- 187.2s	stand, nose down (sniff)
+D1_055_KAN01_001	 187.2- 189.0s	stand
+D1_055_KAN01_001	 189.0- 190.9s	stand, nose down (sniff)
+D1_055_KAN01_001	 190.9- 193.9s	stand
+D1_055_KAN01_001	 193.9- 195.0s	stand, nose down (sniff)
+D1_055_KAN01_001	 195.0- 205.5s	stand
+D1_055_KAN01_001	 205.5- 208.5s	walk	0.66 m/s
+D1_055_KAN01_001	 208.5- 209.5s	walk, turning right	0.77 m/s
+D1_055_KAN01_001	 209.5- 210.7s	walk	0.58 m/s
+D1_055_KAN01_001	 210.7- 211.5s	walk, turning left	0.60 m/s
+D1_055_KAN01_001	 211.5- 216.4s	walk	0.51 m/s
+D1_055_KAN01_001	 216.4- 216.9s	sit	starts with: sit down (around 216.4s)
+D1_055_KAN01_001	 216.9- 217.6s	walk, turning right	0.30 m/s ; starts with: stand up from sit (around 216.9s)
+D1_055_KAN01_001	 217.6- 220.1s	stand
+D1_055_KAN01_001	 220.1- 223.3s	walk	0.84 m/s
+D1_057_KAN01_001	   0.0-   0.5s	walk, turning left	0.41 m/s
+D1_057_KAN01_001	   0.5-  15.6s	sit	starts with: sit down (around 0.5s)
+D1_057_KAN01_001	  15.6-  16.6s	canter/gallop	2.58 m/s
+D1_057_KAN01_001	  16.6-  17.1s	jump
+D1_057_KAN01_001	  17.1-  17.8s	trot, turning right	1.50 m/s
+D1_057_KAN01_001	  17.8-  18.7s	walk, turning right	0.57 m/s
+D1_057_KAN01_001	  18.7-  19.9s	walk	0.33 m/s
+D1_057_KAN01_001	  19.9-  20.6s	stand
+D1_057_KAN01_001	  20.6-  21.4s	walk	0.19 m/s
+D1_057_KAN01_001	  21.4-  25.5s	stand
+D1_057_KAN01_001	  25.5-  26.2s	walk	0.24 m/s
+D1_057_KAN01_001	  26.2-  28.6s	stand
+D1_057_KAN01_001	  28.6-  30.6s	walk	0.64 m/s
+D1_057_KAN01_001	  30.6-  31.8s	trot	1.10 m/s
+D1_058_KAN01_001	   0.0-   4.1s	sit
+D1_058_KAN01_001	   4.1-   5.2s	trot	1.68 m/s ; starts with: stand up from sit (around 4.1s)
+D1_058_KAN01_001	   5.2-   6.3s	walk	0.74 m/s
+D1_058_KAN01_001	   6.3-   8.2s	walk, turning left	0.60 m/s
+D1_058_KAN01_001	   8.2-  11.7s	walk	0.88 m/s
+D1_058_KAN01_001	  11.7-  13.4s	walk, turning left	0.71 m/s
+D1_058_KAN01_001	  13.4-  16.1s	sit	starts with: sit down (around 13.4s)
+D1_058_KAN01_001	  16.1-  17.5s	walk	0.63 m/s ; starts with: stand up from sit (around 16.1s)
+D1_058_KAN01_001	  17.5-  23.6s	stand
+D1_058_KAN01_001	  23.6-  24.8s	walk	0.47 m/s
+D1_058_KAN01_001	  24.8-  25.4s	trot	1.76 m/s
+D1_058_KAN01_001	  25.4-  26.4s	canter/gallop	2.43 m/s
+D1_058_KAN01_001	  26.4-  26.9s	jump
+D1_058_KAN01_001	  26.9-  28.7s	walk, turning left	0.80 m/s
+D1_058_KAN01_001	  28.7-  29.5s	walk	0.40 m/s
+D1_058_KAN01_001	  29.5-  36.3s	stand
+D1_059_KAN01_001	   0.0-   6.2s	stand
+D1_059_KAN01_001	   6.2-  12.8s	sit	starts with: sit down (around 6.2s)
+D1_059_KAN01_001	  12.8-  13.6s	walk	0.37 m/s ; starts with: stand up from sit (around 12.8s)
+D1_059_KAN01_001	  13.6-  14.8s	stand
+D1_059_KAN01_001	  14.8-  23.9s	sit	starts with: sit down (around 14.8s)
+D1_059_KAN01_001	  23.9-  24.3s	walk, turning left	0.50 m/s ; starts with: stand up from sit (around 23.9s)
+D1_059_KAN01_001	  24.3-  25.1s	walk	0.41 m/s
+D1_059_KAN01_001	  25.1-  28.6s	sit	starts with: sit down (around 25.1s)
+D1_059_KAN01_001	  28.6-  29.7s	walk	0.37 m/s ; starts with: stand up from sit (around 28.6s)
+D1_059_KAN01_001	  29.7-  30.2s	stand
+D1_059_KAN01_001	  30.2-  33.0s	walk	0.58 m/s
+D1_059_KAN01_001	  33.0-  34.3s	sit	starts with: sit down (around 33.0s)
+D1_059_KAN01_001	  34.3-  35.3s	walk	0.99 m/s ; starts with: stand up from sit (around 34.3s)
+D1_059_KAN01_001	  35.3-  36.0s	walk, turning right	0.78 m/s
+D1_059_KAN01_001	  36.0-  37.9s	walk, turning left	0.83 m/s
+D1_059_KAN01_001	  37.9-  38.5s	trot	1.21 m/s
+D1_059_KAN01_001	  38.5-  39.5s	walk, turning right	0.65 m/s
+D1_059_KAN01_001	  39.5-  40.1s	walk	0.84 m/s
+D1_059_KAN01_001	  40.1-  41.2s	walk, turning left	0.59 m/s
+D1_059_KAN01_001	  41.2-  42.2s	walk	0.25 m/s
+D1_059_KAN01_001	  42.2-  45.2s	sit	starts with: sit down (around 42.2s)
+D1_059_KAN01_001	  45.2-  47.9s	walk	0.47 m/s ; starts with: stand up from sit (around 45.2s)
+D1_059_KAN01_001	  47.9-  48.3s	stand
+D1_059_KAN01_001	  48.3-  50.4s	walk	0.53 m/s
+D1_061_KAN01_001	   0.0-   2.4s	lie
+D1_061_KAN01_001	   2.4-   4.2s	walk	0.36 m/s ; starts with: get up from lying (around 2.4s)
+D1_061_KAN01_001	   4.2-   5.0s	walk, turning left	0.35 m/s
+D1_061_KAN01_001	   5.0-   5.8s	walk	0.29 m/s
+D1_061_KAN01_001	   5.8-   6.8s	walk, turning right	0.23 m/s
+D1_061_KAN01_001	   6.8-   7.3s	walk	0.27 m/s
+D1_061_KAN01_001	   7.3-  20.7s	stand
+D1_061_KAN01_001	  20.7-  21.6s	walk	0.44 m/s
+D1_061_KAN01_001	  21.6-  22.2s	walk, turning right	0.94 m/s
+D1_061_KAN01_001	  22.2-  23.2s	trot, turning left	1.41 m/s
+D1_061_KAN01_001	  23.2-  23.8s	walk	0.91 m/s
+D1_061_KAN01_001	  23.8-  24.3s	walk, turning left	0.68 m/s
+D1_061_KAN01_001	  24.3-  26.4s	stand
+D1_061_KAN01_001	  26.4-  27.3s	walk, turning left	0.41 m/s
+D1_061_KAN01_001	  27.3-  29.2s	walk	0.65 m/s
+D1_061_KAN01_001	  29.2-  29.7s	canter/gallop	2.57 m/s
+D1_061_KAN01_001	  29.7-  30.5s	trot	1.30 m/s
+D1_061_KAN01_001	  30.5-  31.0s	walk, nose down (sniff), turning right	0.55 m/s
+D1_061_KAN01_001	  31.0-  31.7s	walk, turning right	0.56 m/s
+D1_061_KAN01_001	  31.7-  32.2s	trot, turning right	1.78 m/s
+D1_061_KAN01_001	  32.2-  33.9s	canter/gallop	2.60 m/s
+D1_061_KAN01_001	  33.9-  35.0s	trot, turning left	1.77 m/s
+D1_061_KAN01_001	  35.0-  36.1s	walk, turning left	0.77 m/s
+D1_061_KAN01_001	  36.1-  37.1s	walk	1.01 m/s
+D1_061_KAN01_001	  37.1-  38.2s	trot	1.25 m/s
+D1_061_KAN01_001	  38.2-  38.6s	walk	1.06 m/s
+D1_061_KAN01_001	  38.6-  40.2s	trot	1.30 m/s
+D1_061_KAN01_001	  40.2-  40.6s	trot, turning right	1.19 m/s
+D1_061_KAN01_001	  40.6-  42.0s	walk	0.66 m/s
+D1_061_KAN01_001	  42.0-  50.4s	lie	starts with: lie down (around 42.0s)
+D1_061_KAN01_001	  50.4-  51.7s	walk	0.18 m/s ; starts with: get up from lying (around 50.4s)
+D1_061_KAN01_001	  51.7-  52.2s	stand, nose down (sniff)
+D1_061_KAN01_001	  52.2-  53.0s	walk, turning left	0.26 m/s
+D1_061_KAN01_001	  53.0-  53.7s	walk	0.23 m/s
+D1_061_KAN01_001	  53.7-  54.1s	walk, nose down (sniff)	0.29 m/s
+D1_061_KAN01_001	  54.1-  68.8s	lie	starts with: lie down (around 54.1s)
+D1_061_KAN01_001	  68.8-  75.7s	sit	starts with: lie -> sit up (around 68.8s)
+D1_061_KAN01_001	  75.7-  77.9s	walk	0.50 m/s ; starts with: stand up from sit (around 75.7s)
+D1_061_KAN01_001	  77.9-  79.1s	walk, turning right	0.53 m/s
+D1_061_KAN01_001	  79.1-  80.7s	walk, turning left	0.56 m/s
+D1_061_KAN01_001	  80.7-  83.9s	stand
+D1_061_KAN01_001	  83.9-  84.5s	walk, turning left	0.53 m/s
+D1_061_KAN01_001	  84.5-  85.9s	walk, turning right	0.36 m/s
+D1_061_KAN01_001	  85.9-  87.0s	walk	0.52 m/s
+D1_061_KAN01_001	  87.0-  87.8s	walk, turning right	0.17 m/s
+D1_061_KAN01_001	  87.8-  88.2s	turn in place right
+D1_061_KAN01_001	  88.2-  88.8s	walk	0.38 m/s
+D1_061_KAN01_001	  88.8-  89.2s	walk, turning right	0.67 m/s
+D1_061_KAN01_001	  89.2-  90.0s	trot	1.15 m/s
+D1_061_KAN01_001	  90.0-  91.0s	trot, turning left	1.30 m/s
+D1_061_KAN01_001	  91.0-  92.0s	walk, turning left	0.82 m/s
+D1_061_KAN01_001	  92.0-  92.6s	walk	0.57 m/s
+D1_061_KAN01_001	  92.6-  94.6s	walk, turning right	0.41 m/s
+D1_061_KAN01_001	  94.6-  95.7s	walk	0.43 m/s
+D1_061_KAN01_001	  95.7-  96.2s	walk, turning right	0.34 m/s
+D1_061_KAN01_001	  96.2-  96.9s	turn in place right
+D1_061_KAN01_001	  96.9-  99.0s	walk, turning right	0.33 m/s
+D1_061_KAN01_001	  99.0- 100.3s	walk	0.85 m/s
+D1_061_KAN01_001	 100.3- 101.8s	walk, turning left	0.52 m/s
+D1_061_KAN01_001	 101.8- 102.5s	walk	0.70 m/s
+D1_061_KAN01_001	 102.5- 104.8s	walk, turning right	0.52 m/s
+D1_061_KAN01_001	 104.8- 105.3s	walk	0.51 m/s
+D1_061_KAN01_001	 105.3- 106.5s	walk, turning left	0.39 m/s
+D1_061_KAN01_001	 106.5- 107.1s	walk	0.33 m/s
+D1_061_KAN01_001	 107.1- 108.2s	walk, turning right	0.41 m/s
+D1_061_KAN01_001	 108.2- 108.8s	trot, turning right	1.79 m/s
+D1_061_KAN01_001	 108.8- 109.8s	walk, nose down (sniff), turning left	0.90 m/s
+D1_061_KAN01_001	 109.8- 110.3s	walk, nose down (sniff)	0.31 m/s
+D1_061_KAN01_001	 110.3- 111.2s	stand, nose down (sniff)
+D1_061_KAN01_001	 111.2- 112.2s	walk, nose down (sniff)	0.21 m/s
+D1_061_KAN01_001	 112.2- 126.7s	lie	starts with: lie down (around 112.2s)
+D1_061_KAN01_001	 126.7- 127.7s	walk	0.27 m/s ; starts with: get up from lying (around 126.7s)
+D1_061_KAN01_001	 127.7- 128.6s	walk, turning right	0.65 m/s
+D1_061_KAN01_001	 128.6- 129.8s	walk	1.01 m/s
+D1_061_KAN01_001	 129.8- 132.0s	walk, turning left	0.61 m/s
+D1_061_KAN01_001	 132.0- 132.6s	walk	0.36 m/s
+D1_061_KAN01_001	 132.6- 133.5s	stand
+D1_061_KAN01_001	 133.5- 139.6s	walk	0.51 m/s
+D1_061_KAN01_001	 139.6- 140.9s	stand
+D1_061_KAN01_001	 140.9- 141.6s	walk, turning right	0.46 m/s
+D1_061_KAN01_001	 141.6- 142.9s	walk	0.49 m/s
+D1_061_KAN01_001	 142.9- 143.9s	walk, turning right	0.62 m/s
+D1_061_KAN01_001	 143.9- 144.4s	walk	0.76 m/s
+D1_061_KAN01_001	 144.4- 145.7s	walk, turning left	0.71 m/s
+D1_061_KAN01_001	 145.7- 146.8s	walk, turning right	0.71 m/s
+D1_061_KAN01_001	 146.8- 148.7s	walk, turning left	0.84 m/s
+D1_061_KAN01_001	 148.7- 150.4s	walk, turning right	0.92 m/s
+D1_061_KAN01_001	 150.4- 151.8s	walk, turning left	0.81 m/s
+D1_061_KAN01_001	 151.8- 153.2s	trot	1.25 m/s
+D1_061_KAN01_001	 153.2- 153.9s	walk	0.58 m/s
+D1_061_KAN01_001	 153.9- 155.3s	stand
+D1_061_KAN01_001	 155.3- 155.9s	walk, turning right	0.46 m/s
+D1_061_KAN01_001	 155.9- 157.2s	walk	0.50 m/s
+D1_061_KAN01_001	 157.2- 164.2s	stand
+D1_061_KAN01_001	 164.2- 165.2s	stand, nose down (sniff)
+D1_061_KAN01_001	 165.2- 165.6s	walk, nose down (sniff)	0.25 m/s
+D1_061_KAN01_001	 165.6- 192.3s	lie	starts with: lie down (around 165.6s)
+D1_061_KAN01_001	 192.3- 193.0s	walk, turning left	0.72 m/s ; starts with: get up from lying (around 192.3s)
+D1_061_KAN01_001	 193.0- 194.8s	walk	0.86 m/s
+D1_061z_KAN01_002	   0.0-   0.4s	walk	0.21 m/s
+D1_061z_KAN01_002	   0.4-   1.6s	stand
+D1_061z_KAN01_002	   1.6-   2.1s	walk, turning left	0.45 m/s
+D1_061z_KAN01_002	   2.1-   3.1s	walk, turning right	0.39 m/s
+D1_061z_KAN01_002	   3.1-   3.8s	walk	0.29 m/s
+D1_061z_KAN01_002	   3.8-  11.0s	stand
+D1_061z_KAN01_002	  11.0-  11.4s	walk, turning right	0.31 m/s
+D1_061z_KAN01_002	  11.4-  12.7s	walk	0.31 m/s
+D1_061z_KAN01_002	  12.7-  15.6s	stand
+D1_061z_KAN01_002	  15.6-  17.1s	sit	starts with: sit down (around 15.6s)
+D1_061z_KAN01_002	  17.1-  22.6s	lie	starts with: sit -> lie down (around 17.1s)
+D1_061z_KAN01_002	  22.6-  24.3s	walk	0.63 m/s ; starts with: get up from lying (around 22.6s)
+D1_061z_KAN01_002	  24.3-  25.0s	walk, turning right	0.45 m/s
+D1_061z_KAN01_002	  25.0-  27.0s	stand
+D1_061z_KAN01_002	  27.0-  27.5s	walk	0.19 m/s
+D1_061z_KAN01_002	  27.5-  28.1s	stand
+D1_061z_KAN01_002	  28.1-  28.6s	walk	0.22 m/s
+D1_061z_KAN01_002	  28.6-  30.0s	sit	starts with: sit down (around 28.6s)
+D1_061z_KAN01_002	  30.0-  39.1s	lie	starts with: sit -> lie down (around 30.0s)
+D1_061z_KAN01_002	  39.1-  39.8s	walk	0.36 m/s ; starts with: get up from lying (around 39.1s)
+D1_061z_KAN01_002	  39.8-  40.2s	walk, turning right	0.51 m/s
+D1_061z_KAN01_002	  40.2-  42.8s	walk	0.29 m/s
+D1_061z_KAN01_002	  42.8-  44.8s	walk, turning right	0.61 m/s
+D1_061z_KAN01_002	  44.8-  47.1s	stand
+D1_061z_KAN01_002	  47.1-  47.6s	walk, turning right	0.30 m/s
+D1_061z_KAN01_002	  47.6-  49.3s	walk	0.52 m/s
+D1_061z_KAN01_002	  49.3-  49.8s	walk, turning left	0.98 m/s
+D1_061z_KAN01_002	  49.8-  50.2s	trot, turning left	1.65 m/s
+D1_061z_KAN01_002	  50.2-  51.4s	canter/gallop	2.95 m/s
+D1_061z_KAN01_003	   0.0-   3.8s	walk	1.04 m/s
+D1_061z_KAN01_003	   3.8-   4.4s	walk, turning right	0.71 m/s
+D1_061z_KAN01_003	   4.4-   5.8s	walk	0.28 m/s
+D1_061z_KAN01_003	   5.8-   6.9s	stand
+D1_061z_KAN01_003	   6.9-  10.3s	walk	0.32 m/s
+D1_061z_KAN01_003	  10.3-  11.4s	stand
+D1_061z_KAN01_003	  11.4-  11.9s	walk, turning right	0.34 m/s
+D1_061z_KAN01_003	  11.9-  13.4s	walk	0.61 m/s
+D1_061z_KAN01_003	  13.4-  14.9s	walk, turning left	0.36 m/s
+D1_061z_KAN01_003	  14.9-  16.2s	walk	0.23 m/s
+D1_061z_KAN01_003	  16.2-  18.2s	stand
+D1_061z_KAN01_003	  18.2-  20.1s	walk	0.51 m/s
+D1_061z_KAN01_003	  20.1-  33.5s	stand
+D1_061z_KAN01_003	  33.5-  34.7s	walk	0.40 m/s
+D1_061z_KAN01_003	  34.7-  35.1s	walk, turning left	0.32 m/s
+D1_061z_KAN01_003	  35.1-  36.3s	stand
+D1_061z_KAN01_003	  36.3-  38.3s	sit	starts with: sit down (around 36.3s)
+D1_061z_KAN01_003	  38.3-  86.6s	lie	starts with: sit -> lie down (around 38.3s)
+D1_061z_KAN01_003	  86.6-  87.8s	sit	starts with: lie -> sit up (around 86.6s)
+D1_061z_KAN01_003	  87.8-  88.5s	walk	0.34 m/s ; starts with: stand up from sit (around 87.8s)
+D1_061z_KAN01_003	  88.5- 124.2s	stand
+D1_061z_KAN01_003	 124.2- 125.0s	walk, turning right	0.31 m/s
+D1_061z_KAN01_003	 125.0- 126.1s	walk	0.37 m/s
+D1_061z_KAN01_003	 126.1- 129.2s	stand
+D1_061z_KAN01_003	 129.2- 129.9s	walk	0.25 m/s
+D1_061z_KAN01_003	 129.9- 130.3s	stand
+D1_061z_KAN01_003	 130.3- 131.0s	walk	0.31 m/s
+D1_061z_KAN01_003	 131.0- 132.8s	walk, turning left	0.35 m/s
+D1_061z_KAN01_003	 132.8- 134.9s	walk	0.39 m/s
+D1_061z_KAN01_003	 134.9- 135.7s	walk, turning right	0.37 m/s
+D1_061z_KAN01_003	 135.7- 145.8s	stand
+D1_071_KAN02_002	   0.0-   4.4s	walk	0.76 m/s
+D1_071_KAN02_002	   4.4-   8.9s	stand
+D1_071_KAN02_002	   8.9-   9.4s	sit	starts with: sit down (around 8.9s)
+D1_071_KAN02_002	   9.4-  13.3s	lie	starts with: sit -> lie down (around 9.4s)
+D1_071_KAN02_002	  13.3-  13.8s	crouch/transition
+D1_071_KAN02_002	  13.8-  35.2s	lie
+D1_071_KAN02_002	  35.2-  41.5s	sit	starts with: lie -> sit up (around 35.2s)
+D1_071_KAN02_002	  41.5-  42.3s	walk, turning right	0.67 m/s ; starts with: stand up from sit (around 41.5s)
+D1_071_KAN02_002	  42.3-  46.8s	walk	0.78 m/s
+D1_071_KAN02_002	  46.8-  47.6s	stand
+D1_073_KAN02_002	   0.0-   1.1s	walk	0.31 m/s
+D1_073_KAN02_002	   1.1-   1.5s	stand
+D1_073_KAN02_002	   1.5-   2.9s	walk	0.24 m/s
+D1_073_KAN02_002	   2.9-   3.7s	walk, turning right	0.28 m/s
+D1_073_KAN02_002	   3.7-   6.1s	walk	0.32 m/s
+D1_073_KAN02_002	   6.1-   7.2s	walk, turning right	0.47 m/s
+D1_073_KAN02_002	   7.2-   8.9s	walk	0.46 m/s
+D1_073_KAN02_002	   8.9-   9.3s	walk, turning left	0.29 m/s
+D1_073_KAN02_002	   9.3-  10.6s	stand
+D1_073_KAN02_002	  10.6-  11.1s	walk	0.18 m/s
+D1_073_KAN02_002	  11.1-  12.1s	stand
+D1_073_KAN02_002	  12.1-  13.1s	walk	0.27 m/s
+D1_073_KAN02_002	  13.1-  14.7s	walk, turning right	0.39 m/s
+D1_073_KAN02_002	  14.7-  16.1s	stand
+D1_073_KAN02_002	  16.1-  17.7s	walk	0.27 m/s
+D1_073_KAN02_002	  17.7-  18.3s	stand
+D1_073_KAN02_002	  18.3-  19.1s	walk	0.28 m/s
+D1_073_KAN02_002	  19.1-  19.5s	walk, turning right	0.58 m/s
+D1_073_KAN02_002	  19.5-  20.6s	walk	0.39 m/s
+D1_073_KAN02_002	  20.6-  21.6s	walk, turning right	0.66 m/s
+D1_073_KAN02_002	  21.6-  24.5s	walk	0.35 m/s
+D1_073_KAN02_002	  24.5-  25.1s	stand
+D1_073_KAN02_002	  25.1-  26.1s	walk, turning right	0.27 m/s
+D1_073_KAN02_002	  26.1-  28.4s	walk	0.23 m/s
+D1_073_KAN02_002	  28.4-  29.1s	stand
+D1_073_KAN02_002	  29.1-  29.7s	walk	0.20 m/s
+D1_073_KAN02_002	  29.7-  30.4s	stand
+D1_073_KAN02_002	  30.4-  30.8s	walk, turning right	0.16 m/s
+D1_073_KAN02_002	  30.8-  31.7s	stand
+D1_073_KAN02_002	  31.7-  32.2s	walk	0.20 m/s
+D1_073_KAN02_002	  32.2-  33.5s	stand
+D1_073_KAN02_002	  33.5-  34.8s	walk	0.28 m/s
+D1_073_KAN02_002	  34.8-  35.2s	stand
+D1_073_KAN02_002	  35.2-  36.9s	walk, turning right	0.23 m/s
+D1_073_KAN02_002	  36.9-  37.9s	walk	0.29 m/s
+D1_073_KAN02_002	  37.9-  38.8s	stand
+D1_073_KAN02_002	  38.8-  40.2s	walk	0.21 m/s
+D1_073_KAN02_002	  40.2-  41.0s	stand
+D1_073_KAN02_002	  41.0-  41.9s	walk	0.24 m/s
+D1_073_KAN02_002	  41.9-  42.4s	stand
+D1_073_KAN02_002	  42.4-  44.9s	walk	0.19 m/s
+D1_073_KAN02_002	  44.9-  46.1s	walk, turning right	0.24 m/s
+D1_073_KAN02_002	  46.1-  48.6s	walk	0.25 m/s
+D1_073_KAN02_002	  48.6-  50.0s	walk, turning right	0.31 m/s
+D1_073_KAN02_002	  50.0-  50.4s	walk	0.55 m/s
+D1_073_KAN02_002	  50.4-  51.2s	walk, turning left	0.36 m/s
+D1_073_KAN02_002	  51.2-  54.0s	walk	0.27 m/s
+D1_086_KAN02_001	   0.0-  47.2s	sit
+D1_086_KAN02_001	  47.2-  47.8s	crouch/transition
+D1_086_KAN02_001	  47.8-  49.8s	stand	starts with: stand up from sit (around 47.8s)
+D1_086_KAN02_001	  49.8-  50.6s	walk, turning right	0.20 m/s
+D1_086_KAN02_001	  50.6-  55.2s	stand
+D1_086_KAN02_001	  55.2-  57.3s	walk, turning left	0.30 m/s
+D1_086_KAN02_001	  57.3-  59.0s	walk	0.49 m/s
+D1_086_KAN02_001	  59.0-  60.8s	stand
+D1_086_KAN02_001	  60.8-  85.0s	sit	starts with: sit down (around 60.8s)
+D1_ex01_KAN01_001	   0.0-   2.4s	stand
+D1_ex01_KAN01_001	   2.4-   5.5s	walk	0.90 m/s
+D1_ex01_KAN01_001	   5.5-   6.5s	trot	1.16 m/s
+D1_ex01_KAN01_001	   6.5-  10.2s	walk	0.73 m/s
+D1_ex01_KAN01_001	  10.2-  12.4s	stand
+D1_ex01_KAN01_001	  12.4-  14.3s	walk	0.37 m/s
+D1_ex02_KAN02_001	   0.0-  44.6s	lie
+D1_ex02_KAN02_001	  44.6-  48.8s	sit	starts with: lie -> sit up (around 44.6s)
+D1_ex02_KAN02_001	  48.8-  56.4s	stand	starts with: stand up from sit (around 48.8s)
+D1_ex02_KAN02_001	  56.4-  56.8s	walk	0.65 m/s
+D1_ex02_KAN02_001	  56.8-  57.8s	trot, turning right	1.98 m/s
+D1_ex02_KAN02_001	  57.8-  58.3s	trot, turning left	1.71 m/s
+D1_ex02_KAN02_001	  58.3-  58.8s	walk, turning left	0.60 m/s
+D1_ex02_KAN02_001	  58.8-  59.2s	walk	0.20 m/s
+D1_ex02_KAN02_001	  59.2-  60.3s	walk, turning left	0.50 m/s
+D1_ex02_KAN02_001	  60.3-  61.1s	walk	0.79 m/s
+D1_ex02_KAN02_001	  61.1-  61.6s	walk, turning left	0.59 m/s
+D1_ex02_KAN02_001	  61.6-  64.3s	walk	0.70 m/s
+D1_ex02_KAN02_001	  64.3-  65.0s	walk, turning right	0.54 m/s
+D1_ex02_KAN02_001	  65.0-  65.7s	walk	0.26 m/s
+D1_ex02_KAN02_001	  65.7-  68.0s	stand, nose down (sniff)
+D1_ex02_KAN02_001	  68.0-  68.6s	walk, nose down (sniff)	0.27 m/s
+D1_ex02_KAN02_001	  68.6-  81.2s	lie	starts with: lie down (around 68.6s)
+D1_ex03_KAN02_001	   0.0-   0.4s	stand
+D1_ex03_KAN02_001	   0.4-   0.9s	walk	0.22 m/s
+D1_ex03_KAN02_001	   0.9-  14.5s	sit	starts with: sit down (around 0.9s)
+D1_ex03_KAN02_001	  14.5-  14.9s	walk, turning right	0.98 m/s ; starts with: stand up from sit (around 14.5s)
+D1_ex03_KAN02_001	  14.9-  15.5s	walk	0.38 m/s
+D1_ex03_KAN02_001	  15.5-  16.4s	stand
+D1_ex03_KAN02_001	  16.4-  17.2s	stand, nose down (sniff)
+D1_ex03_KAN02_001	  17.2-  18.4s	stand
+D1_ex03_KAN02_001	  18.4-  19.0s	walk	0.19 m/s
+D1_ex03_KAN02_001	  19.0-  22.6s	stand
+D1_ex03_KAN02_001	  22.6-  23.2s	trot, turning left	1.52 m/s
+D1_ex03_KAN02_001	  23.2-  24.7s	stand
+D1_ex03_KAN02_001	  24.7-  25.1s	walk	0.18 m/s
+D1_ex03_KAN02_001	  25.1-  26.3s	stand
+D1_ex03_KAN02_001	  26.3-  28.7s	walk	0.82 m/s
+D1_ex03_KAN02_001	  28.7-  31.2s	walk, turning left	0.66 m/s
+D1_ex03_KAN02_001	  31.2-  33.3s	walk, turning right	0.63 m/s
+D1_ex03_KAN02_001	  33.3-  36.2s	walk, turning left	0.59 m/s
+D1_ex03_KAN02_001	  36.2-  38.1s	walk, turning right	0.55 m/s
+D1_ex03_KAN02_001	  38.1-  38.7s	walk	0.22 m/s
+D1_ex03_KAN02_001	  38.7-  43.4s	stand
+D1_ex03_KAN02_001	  43.4-  45.8s	walk, turning right	0.70 m/s
+D1_ex03_KAN02_001	  45.8-  49.4s	walk	0.71 m/s
+D1_ex03_KAN02_001	  49.4-  50.9s	stand
+D1_ex03_KAN02_001	  50.9-  51.4s	walk	0.19 m/s
+D1_ex03_KAN02_001	  51.4-  53.0s	walk, turning right	0.43 m/s
+D1_ex03_KAN02_001	  53.0-  56.4s	walk	0.52 m/s
+D1_ex03_KAN02_001	  56.4-  57.0s	walk, nose down (sniff)	0.54 m/s
+D1_ex03_KAN02_001	  57.0-  58.5s	stand
+D1_ex03_KAN02_001	  58.5-  59.8s	walk	0.19 m/s
+D1_ex03_KAN02_001	  59.8-  61.9s	stand
+D1_ex03_KAN02_001	  61.9-  62.8s	stand, nose down (sniff)
+D1_ex03_KAN02_001	  62.8-  65.3s	walk	0.40 m/s
+D1_ex03_KAN02_001	  65.3-  67.2s	stand
+D1_ex03_KAN02_001	  67.2-  68.7s	walk, turning right	0.36 m/s
+D1_ex03_KAN02_001	  68.7-  76.6s	stand
+D1_ex03_KAN02_001	  76.6-  77.7s	walk, turning left	0.43 m/s
+D1_ex03_KAN02_001	  77.7-  83.0s	walk	0.61 m/s
+D1_ex03_KAN02_001	  83.0-  84.2s	stand
+D1_ex03_KAN02_003	   0.0-   1.1s	walk	0.19 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	   1.1-   2.0s	walk, turning left	0.17 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	   2.0-  18.9s	stand	on a raised surface 0.77 m
+D1_ex03_KAN02_003	  18.9-  19.4s	walk, turning left	0.25 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	  19.4-  20.8s	walk	0.34 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	  20.8-  25.6s	stand	on a raised surface 0.76 m
+D1_ex03_KAN02_003	  25.6-  26.4s	walk, turning left	0.41 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	  26.4-  28.0s	walk	0.31 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	  28.0-  29.4s	stand	on a raised surface 0.76 m
+D1_ex03_KAN02_003	  29.4-  30.7s	turn in place left	on a raised surface 0.76 m
+D1_ex03_KAN02_003	  30.7-  31.5s	walk, turning left	0.29 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	  31.5-  32.8s	walk	0.35 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	  32.8-  37.4s	stand	on a raised surface 0.77 m
+D1_ex03_KAN02_003	  37.4-  38.1s	turn in place left	on a raised surface 0.76 m
+D1_ex03_KAN02_003	  38.1-  39.4s	walk, turning left	0.31 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	  39.4-  40.2s	walk	0.23 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	  40.2-  57.1s	stand	on a raised surface 0.76 m
+D1_ex03_KAN02_003	  57.1-  58.2s	walk	0.26 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	  58.2-  82.2s	stand	on a raised surface 0.76 m
+D1_ex03_KAN02_003	  82.2-  82.6s	walk, turning right	0.16 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	  82.6-  99.0s	stand	on a raised surface 0.77 m
+D1_ex03_KAN02_003	  99.0- 100.1s	walk, turning left	0.21 m/s ; on a raised surface 0.75 m
+D1_ex03_KAN02_003	 100.1- 100.7s	stand	on a raised surface 0.75 m
+D1_ex03_KAN02_003	 100.7- 102.1s	walk	0.29 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	 102.1- 102.9s	walk, turning right	0.24 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	 102.9- 134.0s	stand	on a raised surface 0.76 m
+D1_ex03_KAN02_003	 134.0- 135.0s	walk, turning right	0.18 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_003	 135.0- 136.7s	walk	0.15 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_006	   0.0-  14.1s	stand	on a raised surface 0.76 m
+D1_ex03_KAN02_006	  14.1-  15.0s	walk, turning left	0.20 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_006	  15.0-  33.2s	stand	on a raised surface 0.76 m
+D1_ex03_KAN02_006	  33.2-  35.8s	jump
+D1_ex03_KAN02_006	  35.8-  36.8s	walk, turning right	0.51 m/s
+D1_ex03_KAN02_006	  36.8-  37.4s	walk	0.26 m/s
+D1_ex03_KAN02_006	  37.4-  38.1s	stand
+D1_ex03_KAN02_006	  38.1-  39.0s	walk	0.53 m/s
+D1_ex03_KAN02_006	  39.0-  41.5s	walk, turning right	0.63 m/s
+D1_ex03_KAN02_006	  41.5-  43.8s	walk	0.24 m/s
+D1_ex03_KAN02_006	  43.8-  44.5s	stand
+D1_ex03_KAN02_006	  44.5-  47.5s	walk	0.57 m/s
+D1_ex03_KAN02_006	  47.5-  48.6s	walk, turning left	0.85 m/s
+D1_ex03_KAN02_006	  48.6-  50.1s	jump
+D1_ex03_KAN02_006	  50.1-  50.7s	walk	0.53 m/s ; on a raised surface 0.29 m
+D1_ex03_KAN02_006	  50.7-  52.0s	jump	on a raised surface 0.40 m
+D1_ex03_KAN02_006	  52.0-  52.7s	walk, turning right	0.36 m/s ; on a raised surface 0.74 m
+D1_ex03_KAN02_006	  52.7-  54.4s	stand	on a raised surface 0.76 m
+D1_ex03_KAN02_006	  54.4-  55.6s	walk, turning right	0.28 m/s ; on a raised surface 0.76 m
+D1_ex03_KAN02_006	  55.6-  58.2s	walk	0.22 m/s ; on a raised surface 0.75 m
+D1_ex03_KAN02_006	  58.2-  59.0s	crouch/transition	on a raised surface 0.74 m
+D1_ex03_KAN02_006	  59.0-  59.6s	sit	on a raised surface 0.74 m ; starts with: sit down (around 59.0s)
+D1_ex03_KAN02_006	  59.6-  62.4s	jump	on a raised surface 0.30 m
+D1_ex03_KAN02_006	  62.4-  63.5s	walk	0.52 m/s
+D1_ex03_KAN02_006	  63.5-  66.0s	stand
+D1_ex03_KAN02_006	  66.0-  67.2s	walk	0.26 m/s
+D1_ex03_KAN02_006	  67.2-  68.0s	stand
+D1_ex03_KAN02_006	  68.0-  69.2s	walk, turning right	0.54 m/s
+D1_ex03_KAN02_006	  69.2-  71.9s	jump
+D1_ex03_KAN02_006	  71.9-  73.4s	walk, turning right	0.25 m/s ; on a raised surface 0.75 m
+D1_ex03_KAN02_006	  73.4-  74.2s	stand	on a raised surface 0.76 m
+D1_ex03_KAN02_006	  74.2-  74.9s	walk	0.36 m/s ; on a raised surface 0.74 m
+D1_ex03_KAN02_006	  74.9-  76.8s	jump	on a raised surface 0.22 m
+D1_ex03_KAN02_006	  76.8-  78.0s	trot	1.66 m/s
+D1_ex03_KAN02_006	  78.0-  78.6s	walk, turning left	0.78 m/s
+D1_ex03_KAN02_006	  78.6-  79.0s	trot, turning left	1.51 m/s
+D1_ex03_KAN02_006	  79.0-  79.5s	trot	1.56 m/s
+D1_ex03_KAN02_006	  79.5-  82.0s	walk	0.24 m/s
+D1_ex03_KAN02_006	  82.0-  83.2s	stand
+D1_ex03_KAN02_006	  83.2-  83.8s	walk	0.17 m/s
+D1_ex03_KAN02_006	  83.8-  84.8s	stand
+D1_ex03_KAN02_006	  84.8-  86.5s	walk, turning right	0.50 m/s
+D1_ex03_KAN02_006	  86.5-  87.1s	walk	0.70 m/s
+D1_ex03_KAN02_006	  87.1-  87.5s	walk, turning left	0.43 m/s
+D1_ex03_KAN02_006	  87.5-  89.5s	walk, turning right	0.24 m/s
+D1_ex03_KAN02_006	  89.5-  90.7s	walk	0.67 m/s
+D1_ex03_KAN02_006	  90.7-  91.4s	walk, turning right	0.49 m/s
+D1_ex03_KAN02_006	  91.4-  92.2s	walk	0.79 m/s
+D1_ex03_KAN02_006	  92.2-  93.4s	walk, turning right	0.80 m/s
+D1_ex03_KAN02_006	  93.4-  94.0s	walk	0.26 m/s
+D1_ex03_KAN02_006	  94.0-  94.6s	walk, turning right	0.54 m/s
+D1_ex03_KAN02_006	  94.6-  96.4s	walk	0.58 m/s
+D1_ex03_KAN02_006	  96.4-  96.8s	stand
+D1_ex03_KAN02_006	  96.8-  97.9s	walk, turning right	0.31 m/s
+D1_ex03_KAN02_006	  97.9-  98.5s	walk	0.72 m/s
+D1_ex03_KAN02_006	  98.5- 100.2s	walk, turning left	0.56 m/s
+D1_ex03_KAN02_006	 100.2- 101.3s	stand
+D1_ex03_KAN02_006	 101.3- 102.2s	walk	0.31 m/s
+D1_ex03_KAN02_006	 102.2- 103.6s	walk, turning left	0.44 m/s
+D1_ex03_KAN02_006	 103.6- 104.3s	trot	1.40 m/s
+D1_ex03_KAN02_006	 104.3- 106.6s	jump	on a raised surface 0.23 m
+D1_ex03_KAN02_006	 106.6- 108.0s	walk, turning left	0.28 m/s ; on a raised surface 0.75 m
+D1_ex03_KAN02_006	 108.0- 113.3s	stand	on a raised surface 0.76 m
+D1_ex03_KAN02_012	   0.0-   0.7s	canter/gallop	2.40 m/s
+D1_ex03_KAN02_012	   0.7-   2.7s	trot	1.81 m/s
+D1_ex03_KAN02_012	   2.7-   5.7s	walk	0.30 m/s
+D1_ex03_KAN02_012	   5.7-  15.1s	stand
+D1_ex03_KAN02_012	  15.1-  16.1s	walk, turning right	0.22 m/s
+D1_ex03_KAN02_012	  16.1-  16.6s	walk	0.20 m/s
+D1_ex03_KAN02_012	  16.6-  17.2s	stand
+D1_ex03_KAN02_012	  17.2-  18.0s	walk, turning left	0.46 m/s
+D1_ex03_KAN02_012	  18.0-  18.4s	walk, nose down (sniff), turning left	0.48 m/s
+D1_ex03_KAN02_012	  18.4-  19.3s	walk, turning left	0.46 m/s
+D1_ex03_KAN02_012	  19.3-  19.9s	walk	0.23 m/s
+D1_ex03_KAN02_012	  19.9-  21.3s	stand
+D1_ex03_KAN02_012	  21.3-  21.8s	turn in place left
+D1_ex03_KAN02_012	  21.8-  22.3s	walk, turning left	0.22 m/s
+D1_ex03_KAN02_012	  22.3-  27.7s	walk	0.49 m/s
+D1_ex03_KAN02_012	  27.7-  35.2s	stand
+D1_ex03_KAN02_012	  35.2-  41.0s	walk	0.87 m/s
+D1_ex03_KAN02_012	  41.0-  43.0s	walk, turning right	0.62 m/s
+D1_ex03_KAN02_012	  43.0-  44.5s	walk	1.06 m/s
+D1_ex03_KAN02_012	  44.5-  46.1s	trot	1.11 m/s
+D1_ex03_KAN02_012	  46.1-  50.4s	walk	0.94 m/s
+D1_ex03_KAN02_012	  50.4-  52.5s	walk, turning right	0.71 m/s
+D1_ex03_KAN02_012	  52.5-  59.9s	walk	0.94 m/s
+D1_ex03_KAN02_013	   0.0-   4.3s	walk	0.86 m/s
+D1_ex03_KAN02_013	   4.3-   4.9s	trot	1.11 m/s
+D1_ex03_KAN02_013	   4.9-   8.3s	walk	0.87 m/s
+D1_ex03_KAN02_013	   8.3-  13.1s	stand
+D1_ex03_KAN02_013	  13.1-  13.5s	walk	0.18 m/s
+D1_ex03_KAN02_013	  13.5-  23.6s	stand
+D1_ex03_KAN02_013	  23.6-  25.1s	walk	0.14 m/s
+D1_ex03_KAN02_013	  25.1-  33.7s	stand
+D1_ex03_KAN02_013	  33.7-  62.5s	sit	starts with: sit down (around 33.7s)
+D1_ex03_KAN02_013	  62.5-  62.9s	walk, turning left	0.92 m/s ; starts with: stand up from sit (around 62.5s)
+D1_ex03_KAN02_013	  62.9-  63.3s	walk, nose down (sniff), turning left	0.34 m/s
+D1_ex03_KAN02_013	  63.3-  65.6s	stand
+D1_ex03_KAN02_013	  65.6-  66.4s	walk, turning left	0.22 m/s
+D1_ex03_KAN02_013	  66.4-  69.6s	stand
+D1_ex03_KAN02_013	  69.6-  73.3s	walk	0.50 m/s
+D1_ex03_KAN02_013	  73.3-  76.3s	stand
+D1_ex03_KAN02_014	   0.0-   2.5s	walk	0.66 m/s
+D1_ex03_KAN02_014	   2.5-   3.9s	walk, turning left	0.58 m/s
+D1_ex03_KAN02_014	   3.9-   4.6s	walk	0.38 m/s
+D1_ex03_KAN02_014	   4.6-   5.1s	walk, turning left	0.56 m/s
+D1_ex03_KAN02_014	   5.1-   5.9s	walk	0.48 m/s
+D1_ex03_KAN02_014	   5.9-   7.0s	stand
+D1_ex03_KAN02_014	   7.0-   9.6s	walk, turning right	0.58 m/s
+D1_ex03_KAN02_014	   9.6-  10.3s	stand
+D1_ex03_KAN02_014	  10.3-  11.3s	walk	0.37 m/s
+D1_ex03_KAN02_014	  11.3-  12.4s	walk, turning right	0.31 m/s
+D1_ex03_KAN02_014	  12.4-  16.0s	sit	starts with: sit down (around 12.4s)
+D1_ex03_KAN02_014	  16.0-  16.5s	walk, turning left	0.68 m/s ; starts with: stand up from sit (around 16.0s)
+D1_ex03_KAN02_014	  16.5-  17.4s	walk	0.45 m/s
+D1_ex03_KAN02_014	  17.4-  18.0s	walk, turning right	0.54 m/s
+D1_ex03_KAN02_014	  18.0-  18.5s	walk	0.72 m/s
+D1_ex03_KAN02_014	  18.5-  19.8s	walk, turning left	0.45 m/s
+D1_ex03_KAN02_014	  19.8-  20.6s	walk	0.52 m/s
+D1_ex03_KAN02_014	  20.6-  21.9s	walk, turning right	0.33 m/s
+D1_ex03_KAN02_014	  21.9-  22.4s	turn in place right
+D1_ex03_KAN02_014	  22.4-  22.9s	walk, turning right	0.35 m/s
+D1_ex03_KAN02_014	  22.9-  23.4s	walk	0.71 m/s
+D1_ex03_KAN02_014	  23.4-  25.1s	walk, turning left	0.52 m/s
+D1_ex03_KAN02_014	  25.1-  26.0s	walk	0.49 m/s
+D1_ex03_KAN02_014	  26.0-  26.7s	walk, turning right	0.29 m/s
+D1_ex03_KAN02_014	  26.7-  27.4s	walk	0.45 m/s
+D1_ex03_KAN02_014	  27.4-  28.8s	walk, turning left	0.35 m/s
+D1_ex03_KAN02_014	  28.8-  30.4s	walk	0.73 m/s
+D1_ex03_KAN02_014	  30.4-  32.8s	walk, turning right	0.61 m/s
+D1_ex03_KAN02_014	  32.8-  33.8s	walk	0.48 m/s
+D1_ex03_KAN02_014	  33.8-  34.4s	stand
+D1_ex03_KAN02_014	  34.4-  35.1s	turn in place left
+D1_ex03_KAN02_014	  35.1-  41.8s	stand
+D1_ex03_KAN02_014	  41.8-  42.8s	walk	0.20 m/s
+D1_ex03_KAN02_014	  42.8-  43.4s	walk, turning left	0.79 m/s
+D1_ex03_KAN02_014	  43.4-  43.9s	trot	1.25 m/s
+D1_ex03_KAN02_014	  43.9-  44.4s	walk	0.87 m/s
+D1_ex03_KAN02_014	  44.4-  45.2s	walk, turning right	0.52 m/s
+D1_ex03_KAN02_014	  45.2-  47.3s	stand
+D1_ex03_KAN02_014	  47.3-  48.5s	turn in place right
+D1_ex03_KAN02_014	  48.5-  48.9s	walk	0.21 m/s
+D1_ex03_KAN02_014	  48.9-  54.5s	stand
+D1_ex03_KAN02_014	  54.5-  55.9s	walk	0.39 m/s
+D1_ex03_KAN02_014	  55.9-  56.7s	stand
+D1_ex03_KAN02_014	  56.7-  58.1s	walk	0.23 m/s
+D1_ex04_KAN02_001	   0.0-   0.6s	walk	0.35 m/s
+D1_ex04_KAN02_001	   0.6-   5.2s	stand
+D1_ex04_KAN02_001	   5.2-   7.0s	walk	0.65 m/s
+D1_ex04_KAN02_001	   7.0-   7.8s	trot	1.36 m/s
+D1_ex04_KAN02_001	   7.8-   9.2s	jump
+D1_ex04_KAN02_001	   9.2-  11.2s	trot	1.67 m/s
+D1_ex04_KAN02_001	  11.2-  13.0s	walk	0.65 m/s
+D1_ex04_KAN02_002	   0.0-   3.0s	sit
+D1_ex04_KAN02_002	   3.0-   5.1s	trot	1.41 m/s ; starts with: stand up from sit (around 3.0s)
+D1_ex04_KAN02_002	   5.1-   6.2s	jump
+D1_ex04_KAN02_002	   6.2-   8.4s	trot	2.05 m/s
+D1_ex04_KAN02_003	   0.0-   1.9s	trot	1.65 m/s
+D1_ex04_KAN02_003	   1.9-   3.6s	jump
+D1_ex04_KAN02_003	   3.6-   4.1s	trot	1.22 m/s
+D1_ex04_KAN02_003	   4.1-   5.9s	walk, turning right	0.82 m/s
+D1_ex04_KAN02_003	   5.9-   7.3s	trot	1.72 m/s
+D1_ex04_KAN02_003	   7.3-   8.3s	canter/gallop	2.47 m/s
+D1_ex04_KAN02_004	   0.0-   1.4s	walk	0.54 m/s
+D1_ex04_KAN02_004	   1.4-   2.6s	stand
+D1_ex04_KAN02_004	   2.6-   3.3s	walk, turning right	0.21 m/s
+D1_ex04_KAN02_004	   3.3-   4.0s	walk	0.30 m/s
+D1_ex04_KAN02_004	   4.0-   4.5s	walk, turning left	0.33 m/s
+D1_ex04_KAN02_004	   4.5-   7.7s	sit	starts with: sit down (around 4.5s)
+D1_ex04_KAN02_004	   7.7-   9.5s	trot	2.18 m/s ; starts with: stand up from sit (around 7.7s)
+D1_ex04_KAN02_004	   9.5-  10.3s	jump
+D1_ex04_KAN02_004	  10.3-  12.5s	trot	1.88 m/s
+D1_ex05_KAN02_001	   0.0-   2.2s	walk	0.89 m/s
+D1_ex05_KAN02_001	   2.2-   2.8s	trot	1.11 m/s
+D1_ex05_KAN02_001	   2.8-   6.8s	walk	0.79 m/s
+D1_ex05_KAN02_001	   6.8-   7.7s	turn in place left
+D1_ex05_KAN02_001	   7.7-   8.1s	stand
+D1_ex05_KAN02_001	   8.1-   9.2s	canter/gallop	1.78 m/s
+D1_ex05_KAN02_001	   9.2-   9.7s	trot	1.72 m/s
+D1_ex05_KAN02_001	   9.7-  12.1s	walk	0.50 m/s
+D1_ex05_KAN02_001	  12.1-  15.9s	stand
+D1_ex05_KAN02_001	  15.9-  16.4s	stand, nose down (sniff)
+D1_ex05_KAN02_001	  16.4-  18.2s	walk	0.23 m/s
+D1_ex05_KAN02_001	  18.2-  18.7s	jump
+D1_ex05_KAN02_001	  18.7-  19.7s	lie
+D1_ex05_KAN02_001	  19.7-  20.8s	crouch/transition
+D1_ex05_KAN02_001	  20.8-  24.6s	lie
+D1_ex05_KAN02_001	  24.6-  25.4s	jump
+D1_ex05_KAN02_001	  25.4-  26.3s	trot	1.96 m/s
+D1_ex05_KAN02_001	  26.3-  28.2s	walk, turning right	0.62 m/s
+D1_ex05_KAN02_001	  28.2-  29.0s	walk	0.36 m/s
+D1_ex05_KAN02_001	  29.0-  31.2s	stand
+D1_ex05_KAN02_001	  31.2-  32.0s	walk, turning left	0.60 m/s
+D1_ex05_KAN02_001	  32.0-  33.5s	walk	0.48 m/s
+D1_ex05_KAN02_001	  33.5-  34.0s	stand
+D1_ex05_KAN02_001	  34.0-  35.9s	walk	0.55 m/s
+D1_ex05_KAN02_001	  35.9-  36.8s	walk, turning left	0.32 m/s
+D1_ex05_KAN02_001	  36.8-  38.1s	walk	0.46 m/s
+D1_ex05_KAN02_001	  38.1-  38.5s	stand
+D1_ex05_KAN02_001	  38.5-  39.6s	walk, turning left	0.47 m/s
+D1_ex05_KAN02_001	  39.6-  40.2s	walk	0.32 m/s
+D1_ex05_KAN02_001	  40.2-  41.7s	stand
+D1_ex05_KAN02_001	  41.7-  43.1s	walk, turning left	0.32 m/s
+D1_ex05_KAN02_001	  43.1-  46.5s	walk	0.79 m/s
+D1_ex05_KAN02_001	  46.5-  47.6s	walk, turning right	0.84 m/s
+D1_ex05_KAN02_001	  47.6-  48.6s	walk	1.07 m/s
+D1_ex05_KAN02_001	  48.6-  50.5s	trot	1.18 m/s
+D1_ex05_KAN02_001	  50.5-  51.9s	walk	0.85 m/s
+D1_ex05_KAN02_001	  51.9-  53.1s	walk, turning right	0.23 m/s
+D1_ex05_KAN02_001	  53.1-  54.2s	walk	0.38 m/s
+D1_ex05_KAN02_001	  54.2-  56.1s	stand
+D1_ex05_KAN02_001	  56.1-  57.3s	walk	0.37 m/s
+D1_ex05_KAN02_001	  57.3-  57.9s	stand
+D1_ex05_KAN02_001	  57.9-  58.3s	turn in place right
+D1_ex05_KAN02_001	  58.3-  59.5s	walk, turning left	0.37 m/s
+D1_ex05_KAN02_001	  59.5-  61.0s	walk, turning right	0.52 m/s
+D1_ex05_KAN02_001	  61.0-  63.6s	walk	0.59 m/s
+D1_ex05_KAN02_001	  63.6-  64.5s	walk, turning right	0.33 m/s
+D1_ex05_KAN02_001	  64.5-  66.6s	stand
+D1_ex05_KAN02_001	  66.6-  67.1s	walk	0.20 m/s
+D1_ex05_KAN02_001	  67.1-  68.1s	stand
+D1_ex05_KAN02_001	  68.1-  71.9s	walk	0.72 m/s
+D1_ex05_KAN02_001	  71.9-  73.7s	walk, turning right	0.52 m/s
+D1_ex05_KAN02_001	  73.7-  74.3s	trot, turning right	1.27 m/s
+D1_ex05_KAN02_001	  74.3-  77.3s	walk	0.61 m/s
+D1_ex05_KAN02_001	  77.3-  79.8s	stand
+D1_ex05_KAN02_001	  79.8-  80.4s	walk	0.22 m/s
+D1_ex05_KAN02_001	  80.4-  81.0s	walk, turning right	0.27 m/s
+D1_ex05_KAN02_001	  81.0-  81.9s	walk	0.32 m/s
+D1_ex05_KAN02_001	  81.9-  86.6s	stand
+D1_ex05_KAN02_001	  86.6-  87.8s	walk, turning left	0.23 m/s
+D1_ex05_KAN02_001	  87.8-  88.8s	walk	0.67 m/s
+D1_ex05_KAN02_001	  88.8-  90.6s	walk, turning right	0.65 m/s
+D1_ex05_KAN02_001	  90.6-  94.4s	walk	0.53 m/s
+D1_ex05_KAN02_001	  94.4-  95.3s	stand
+D1_ex05_KAN02_001	  95.3-  96.5s	walk	0.27 m/s
+D1_ex05_KAN02_001	  96.5-  97.5s	stand
+D1_ex05_KAN02_001	  97.5-  98.3s	walk, turning right	0.49 m/s
+D1_ex05_KAN02_001	  98.3-  99.3s	walk	0.59 m/s
+D1_ex05_KAN02_001	  99.3- 100.4s	walk, turning left	0.42 m/s
+D1_ex05_KAN02_001	 100.4- 101.8s	walk, turning right	0.40 m/s
+D1_ex05_KAN02_001	 101.8- 102.3s	walk	0.81 m/s
+D1_ex05_KAN02_001	 102.3- 103.3s	walk, turning left	0.52 m/s
+D1_ex05_KAN02_001	 103.3- 105.1s	walk, turning right	0.63 m/s
+D1_ex05_KAN02_001	 105.1- 105.6s	walk	0.76 m/s
+D1_ex05_KAN02_001	 105.6- 106.5s	walk, turning left	0.49 m/s
+D1_ex05_KAN02_001	 106.5- 107.0s	walk, turning right	0.41 m/s
+D1_ex05_KAN02_001	 107.0- 108.7s	walk, turning left	0.52 m/s
+D1_ex05_KAN02_001	 108.7- 110.1s	walk, turning right	0.52 m/s
+D1_ex05_KAN02_001	 110.1- 110.7s	walk	0.33 m/s
+D1_ex05_KAN02_001	 110.7- 111.5s	walk, turning right	0.23 m/s
+D1_ex05_KAN02_001	 111.5- 114.0s	walk	0.50 m/s
+D1_ex05_KAN02_001	 114.0- 115.2s	walk, turning right	0.93 m/s
+D1_ex05_KAN02_001	 115.2- 116.0s	trot	1.17 m/s
+D1_ex05_KAN02_001	 116.0- 118.0s	walk	0.96 m/s
+D1_ex05_KAN02_001	 118.0- 118.8s	walk, turning left	0.65 m/s
+D1_ex05_KAN02_001	 118.8- 120.9s	walk	0.70 m/s
+D1_ex05_KAN02_001	 120.9- 121.3s	trot, turning left	1.63 m/s
+D1_ex05_KAN02_001	 121.3- 122.1s	trot	1.70 m/s
+D1_ex05_KAN02_001	 122.1- 123.5s	walk, turning right	0.46 m/s
+D1_ex05_KAN02_001	 123.5- 124.1s	walk	0.31 m/s
+D1_ex05_KAN02_001	 124.1- 125.2s	walk, turning left	0.37 m/s
+D1_ex05_KAN02_001	 125.2- 126.6s	walk	0.51 m/s
+D1_ex05_KAN02_001	 126.6- 127.6s	stand
+D1_ex05_KAN02_001	 127.6- 128.3s	walk, turning right	0.31 m/s
+D1_ex05_KAN02_001	 128.3- 128.9s	walk	0.30 m/s
+D1_ex05_KAN02_001	 128.9- 129.7s	walk, turning left	0.28 m/s
+D1_ex05_KAN02_001	 129.7- 135.1s	stand
+D1_ex05_KAN02_001	 135.1- 135.9s	turn in place left
+D1_ex05_KAN02_001	 135.9- 136.8s	stand
+D1_ex05_KAN02_001	 136.8- 137.4s	walk	0.26 m/s
+D1_ex05_KAN02_001	 137.4- 154.7s	stand
+D1_ex06_KAN02_001	   0.0-   3.6s	stand
+D1_ex06_KAN02_001	   3.6-   4.0s	turn in place right
+D1_ex06_KAN02_001	   4.0-   5.5s	walk	0.29 m/s
+D1_ex06_KAN02_001	   5.5-   7.4s	stand
+D1_ex06_KAN02_001	   7.4-   8.4s	walk	0.31 m/s
+D1_ex06_KAN02_001	   8.4-   8.8s	walk, turning right	0.33 m/s
+D1_ex06_KAN02_001	   8.8-   9.6s	walk	0.46 m/s
+D1_ex06_KAN02_001	   9.6-  10.7s	walk, turning left	0.47 m/s
+D1_ex06_KAN02_001	  10.7-  11.3s	walk	0.41 m/s
+D1_ex06_KAN02_001	  11.3-  13.1s	walk, turning left	0.46 m/s
+D1_ex06_KAN02_001	  13.1-  16.4s	walk	0.26 m/s
+D1_ex06_KAN02_001	  16.4-  22.6s	stand
+D1_ex06_KAN02_001	  22.6-  24.6s	walk	0.41 m/s
+D1_ex06_KAN02_001	  24.6-  25.2s	walk, nose down (sniff)	0.16 m/s
+D1_ex06_KAN02_001	  25.2-  25.7s	stand, nose down (sniff)
+D1_ex06_KAN02_001	  25.7-  27.1s	walk	0.20 m/s
+D1_ex06_KAN02_001	  27.1-  27.6s	walk, turning left	0.26 m/s
+D1_ex06_KAN02_001	  27.6-  31.3s	stand
+D1_ex06_KAN02_001	  31.3-  33.7s	walk, turning right	0.42 m/s
+D1_ex06_KAN02_001	  33.7-  34.6s	walk	0.50 m/s
+D1_ex06_KAN02_001	  34.6-  35.0s	walk, turning left	0.40 m/s
+D1_ex06_KAN02_001	  35.0-  38.5s	stand
+D1_ex06_KAN02_001	  38.5-  41.0s	walk	0.31 m/s
+D1_ex06_KAN02_001	  41.0-  42.0s	walk, turning left	0.43 m/s
+D1_ex06_KAN02_001	  42.0-  42.6s	stand
+D1_ex06_KAN02_001	  42.6-  43.1s	stand, nose down (sniff)
+D1_ex06_KAN02_001	  43.1-  49.1s	stand
+D1_ex06_KAN02_001	  49.1-  51.0s	walk	0.39 m/s
+D1_ex06_KAN02_001	  51.0-  53.1s	stand
+D1_ex06_KAN02_001	  53.1-  53.6s	turn in place left
+D1_ex06_KAN02_001	  53.6-  54.5s	walk, turning left	0.25 m/s
+D1_ex06_KAN02_001	  54.5-  55.3s	walk	0.43 m/s
+D1_ex06_KAN02_001	  55.3-  58.1s	stand
+D1_ex06_KAN02_001	  58.1-  58.5s	stand, nose down (sniff)
+D1_ex06_KAN02_001	  58.5-  65.0s	stand
+D1_ex06_KAN02_001	  65.0-  65.5s	walk	0.50 m/s
+D1_ex06_KAN02_001	  65.5-  67.0s	walk, turning right	0.42 m/s
+D1_ex06_KAN02_001	  67.0-  69.9s	stand
+D1_ex06_KAN02_001	  69.9-  70.4s	walk, turning right	0.41 m/s
+D1_ex06_KAN02_001	  70.4-  74.6s	walk	0.51 m/s
+D1_ex06_KAN02_001	  74.6-  75.6s	walk, turning left	0.59 m/s
+D1_ex06_KAN02_001	  75.6-  76.3s	walk	0.57 m/s
+D1_ex06_KAN02_001	  76.3-  77.0s	walk, turning left	0.52 m/s
+D1_ex06_KAN02_001	  77.0-  79.5s	walk	0.56 m/s
+D1_ex06_KAN02_001	  79.5-  84.0s	stand
+D1_ex06_KAN02_001	  84.0-  89.3s	walk	0.85 m/s

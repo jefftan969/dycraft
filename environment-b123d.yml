@@ -1,0 +1,79 @@
+# The frozen CAD environment for dycraft's build123d paths.
+#
+#   conda env create -p <prefix>/conda_envs/dycraft-b123d-0.11.1 -f environment-b123d.yml
+#
+# dycraft targets EXACTLY build123d 0.11.1. The pin is enforced at runtime by
+# `agent/cad/_solid_compile.check_build123d_version()`, which every CAD
+# child process calls before doing any work; a mismatched interpreter is refused
+# with a message rather than producing subtly different geometry.
+#
+# Why a pin rather than a range: the API moves between minor releases, and the
+# agent is taught this one. `Face.axis_of_rotation` does not exist in 0.9.1 and
+# `Shape.is_valid` changed from a method to a property after it, so a "works on
+# both" build quietly loses the bore-axis feature inventory on one of them. In the
+# other direction, 0.12.0 removes `Face.make_plane`, which the build123d_authoring
+# skill's namespace reference offers the agent, changes the `material` default of
+# Part/Sketch/Compound from '' to None, and renders a reference part to a
+# different image (tests/test_texture_render.py). Moving the pin means regenerating
+# that reference (agent/cad/_namespace_doc.py) and re-checking the
+# skill's pitfalls against the new release.
+#
+# ---------------------------------------------------------------------------
+# Two things about this file that are not optional
+# ---------------------------------------------------------------------------
+#
+# 1. **conda-forge for python, not defaults.** Mixing channels produced a python
+#    whose `pyexpat` was built against a different libexpat than the one
+#    installed, failing with `undefined symbol:
+#    XML_SetAllocTrackerActivationThreshold`.
+#
+# 2. **build123d comes from PyPI, not conda-forge.** conda-forge stops at 0.9.1.
+#    The PyPI wheel pulls `cadquery-ocp-novtk`, which links the *system*
+#    libexpat; once OCP loads it, the conda `pyexpat` cannot resolve its
+#    symbols, and build123d 0.11.1 imports IPython at module scope so every
+#    import hits it. dycraft handles this by prepending the environment's own
+#    `lib/` to `LD_LIBRARY_PATH` for every CAD child
+#    (`_cad_env.b123d_child_env`). If you run this interpreter by hand,
+#    do the same.
+#
+# Do NOT install cadquery/OCP from conda-forge into this env: conda-forge `ocp`
+# and pypi `cadquery-ocp` both provide the `OCP` module and conflict.
+#
+# ---------------------------------------------------------------------------
+# A resolution known to work on linux-64 (only build123d is pinned)
+# ---------------------------------------------------------------------------
+#   python                 3.11.15  (conda-forge h7508c33_1_cpython)
+#   expat / libexpat        2.8.1   (conda-forge hecca717_1)
+#   pip                    26.2
+#
+#   build123d              0.11.1        <-- the pin
+#   cadquery-ocp-novtk     7.9.3.1.1     OCCT 7.9
+#   cadquery-ocp-proxy     7.9.3.1.1
+#   ocp_gordon             0.2.2
+#   ocpsvg                 0.6.0
+#   numpy                  2.4.6
+#   scipy                  1.17.1
+#   scikit-learn           1.9.0
+#   sympy                  1.14.0
+#   anytree                2.13.0
+#   ezdxf                  1.4.4
+#   ipython                9.16.0
+#   lib3mf                 2.5.0
+#   svgpathtools           1.7.2
+#   trianglesolver         1.2
+#   typing_extensions      4.16.0
+#   webcolors              24.8.0
+#   requests               2.34.2
+
+
+name: dycraft-b123d-0.11.1
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python>=3.10,<3.15   # its OCP (cadquery-ocp-novtk 7.9) has wheels for 3.10-3.14
+  - pip
+  - pip:
+      - build123d==0.11.1

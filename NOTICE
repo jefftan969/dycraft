@@ -1,0 +1,61 @@
+dycraft
+Copyright 2026 The DyCraft Authors
+
+Licensed under the Apache License, Version 2.0 (`LICENSE`).
+
+---
+
+This product includes source code adapted from Articraft
+([github.com/mattzh72/articraft](https://github.com/mattzh72/articraft)).
+
+The vendored code is the run viewer's frontend: the three.js/URDF viewport and
+joint controls (`viewer/web/src/components/viewer3d/`), the shared UI primitives
+(`viewer/web/src/components/ui/`, `viewer/web/src/components/layout/`), the
+trajectory inspector's turn renderer and parsers
+(`viewer/web/src/components/inspector/`), and the small shared helpers under
+`viewer/web/src/lib/`. Files modified for dycraft start with a header saying so,
+and the files in those directories written for dycraft are listed in
+`viewer/web/src/components/README.md`.
+
+It is distributed under the Apache License, Version 2.0, consistent with the
+upstream license; the license text is in `LICENSE`.
+
+---
+
+This product includes documentation mirrored from cuRobo
+([github.com/NVlabs/curobo](https://github.com/NVlabs/curobo),
+[nvlabs.github.io/curobo](https://nvlabs.github.io/curobo/latest/)),
+Copyright (c) 2023-2026 NVIDIA CORPORATION & AFFILIATES.
+
+`animation/ik/curobo_docs/` holds an unmodified-in-substance copy of the cuRobo
+v0.8.0 (cuRoboV2) documentation pages an `h.ik` script needs, converted from the
+published HTML to Markdown by `animation/ik/fetch_curobo_docs.py`. The
+conversion strips navigation chrome and permalink anchors; no content is
+rewritten. Each file carries the URL it came from. It is vendored because a
+dycraft run executes without network access, so the published site is
+unreachable from inside one.
+
+It is distributed under the Apache License, Version 2.0, consistent with the
+upstream license; the license text is in `LICENSE`.
+
+---
+
+This product does not include motion-capture data. `python -m dycraft.install
+mocap` downloads the CMU Graphics Lab Motion Capture Database (mocap.cs.cmu.edu;
+BVH conversion by B. Hahne, from github.com/una-dinosauria/cmu-mocap) and, with
+`--dog` and the user's acceptance, the MANN dog captures
+(github.com/sebastianstarke/AI4Animation, CC BY-NC 4.0).
+
+`animation/mocap/libraries/mann_dog/index.txt` holds dycraft's own labels of
+time spans in the MANN captures; the install copies it beside the captures.
+
+---
+
+The asset library is downloaded separately with `python -m dycraft.install
+library`. Its characters keep their own licenses, listed per character in
+the library's `catalog.json` and `CREDITS.md`, with the license texts in the
+dataset's `LICENSES/` folder (huggingface.co/datasets/jefftan969/dycraft-assets).
+They include CC BY 4.0, CC BY-SA 4.0, CC0, the MIT license (Microsoft
+Rocketbox), the BSD 3-Clause license (the Unitree G1 description) and
+Apache-2.0 (the Franka Panda description). Characters under CC BY-NC or
+CC BY-NC-SA may be used for non-commercial purposes only.
