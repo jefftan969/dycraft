@@ -1,8 +1,19 @@
+<div align="center">
+
 # DyCraft: An Agentic System for Long-Horizon 4D Scene Generation
 
-[Jeff Tan](https://jefftan969.github.io/)\*, [Hang Dai](https://daihangpku.github.io/)\*, [Zeqian Long](https://zeqian-long.github.io/)\*, [Yanzhe Lyu](https://yanzhelyu.github.io/), [R. Kenny Jones](https://rkjones4.github.io/), [Shangzhe Wu](https://www.elliottwu.com/), [Chen Geng](https://chen-geng.com/)†, [Jiajun Wu](https://jiajunwu.com/)†
+[Jeff Tan](https://jefftan969.github.io/)<sup>1\*</sup>, [Hang Dai](https://daihangpku.github.io/)<sup>1\*</sup>, [Zeqian Long](https://zeqian-long.github.io/)<sup>1\*</sup>, [Yanzhe Lyu](https://yanzhelyu.github.io/)<sup>1</sup>, [R. Kenny Jones](https://rkjones4.github.io/)<sup>1</sup>, [Shangzhe Wu](https://www.elliottwu.com/)<sup>2</sup>, [Chen Geng](https://chen-geng.com/)<sup>1†</sup>, [Jiajun Wu](https://jiajunwu.com/)<sup>1†</sup>
 
-[Project page](https://dy-craft.github.io) | [arXiv](https://arxiv.org/abs/2610.40754) | [Data](https://huggingface.co/datasets/jefftan969/dycraft-films)
+<sup>1</sup>Stanford University &nbsp;&nbsp; <sup>2</sup>University of Cambridge<br>
+<sup>\*</sup>Co-first authors &nbsp;&nbsp; <sup>†</sup>Equal advising
+
+[![Project Page](docs/images/badges/project-page.svg)](https://dy-craft.github.io)
+[![Paper](docs/images/badges/paper.svg)](https://arxiv.org/abs/2610.40754)
+[![Code](docs/images/badges/code.svg)](https://github.com/jefftan969/dycraft)
+[![Films](docs/images/badges/films.svg)](https://huggingface.co/datasets/jefftan969/dycraft-films)
+[![Assets](docs/images/badges/assets.svg)](https://huggingface.co/datasets/jefftan969/dycraft-assets)
+
+</div>
 
 [![One moment from each of the 24 films](docs/images/films.jpg)](https://dy-craft.github.io)
 
